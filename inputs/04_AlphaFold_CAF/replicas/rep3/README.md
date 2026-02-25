@@ -1,4 +1,4 @@
-Replica 2 – CAF system
+Replica 3 – CAF system
 
 Independent simulation using the shared MD protocol.
 
