@@ -1,0 +1,102 @@
+Dolasetron
+C19H20N2O3
+115956-12-2 Copyright (C) 2025 ACS
+  0  0  0     0  0            999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS  26 30 0 0 0
+M  V30 BEGIN ATOM
+M  V30 1 O 6.3486 2.0303 0.0 0
+M  V30 2 C 5.3180 3.1747 0.0 0
+M  V30 3 O 5.7940 4.6393 0.0 0
+M  V30 4 O 15.4198 2.5507 0.0 0
+M  V30 5 C 10.3835 1.5163 0.0 0 CFG=2
+M  V30 6 N 10.9240 2.9119 0.0 0 CFG=2
+M  V30 7 C 11.6988 0.6965 0.0 0
+M  V30 8 C 8.8835 1.2046 0.0 0
+M  V30 9 C 9.8337 4.1268 0.0 0 CFG=1
+M  V30 10 C 12.4529 3.2221 0.0 0
+M  V30 11 C 12.3771 2.3539 0.0 0
+M  V30 12 C 7.8548 2.3505 0.0 0 CFG=1
+M  V30 13 C 11.0122 3.8743 0.0 0
+M  V30 14 C 8.3261 3.8082 0.0 0
+M  V30 15 C 13.8846 2.6725 0.0 0
+M  V30 16 C 3.8118 2.8545 0.0 0
+M  V30 17 C 2.6674 3.8851 0.0 0
+M  V30 18 C 3.1854 1.4477 0.0 0
+M  V30 19 C 1.3336 3.1151 0.0 0
+M  V30 20 C 2.6674 5.4250 0.0 0
+M  V30 21 N 1.6538 1.6087 0.0 0
+M  V30 22 C 0.0000 3.8851 0.0 0
+M  V30 23 C 1.3336 6.1950 0.0 0
+M  V30 24 C 0.0000 5.4250 0.0 0
+M  V30 25 H 10.1135 0.0000 0.0 0
+M  V30 26 H 9.8359 5.6667 0.0 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 1 1 2
+M  V30 2 1 12 1 CFG=1
+M  V30 3 2 2 3
+M  V30 4 1 2 16
+M  V30 5 2 4 15
+M  V30 6 1 5 6
+M  V30 7 1 5 7
+M  V30 8 1 5 8
+M  V30 9 1 5 25 CFG=3
+M  V30 10 1 6 9
+M  V30 11 1 6 10 CFG=1
+M  V30 12 1 7 11
+M  V30 13 1 8 12
+M  V30 14 1 9 13 CFG=1
+M  V30 15 1 9 14
+M  V30 16 1 9 26 CFG=3
+M  V30 17 1 10 15
+M  V30 18 1 11 13
+M  V30 19 1 11 15
+M  V30 20 1 12 14
+M  V30 21 1 16 17
+M  V30 22 2 16 18
+M  V30 23 1 17 19
+M  V30 24 2 17 20
+M  V30 25 1 18 21
+M  V30 26 1 19 21
+M  V30 27 2 19 22
+M  V30 28 1 20 23
+M  V30 29 1 22 24
+M  V30 30 2 23 24
+M  V30 END BOND
+M  V30 BEGIN COLLECTION
+M  V30 MDLV30/STEREL1 ATOMS=(4 5 6 9 12)
+M  V30 END COLLECTION
+M  V30 END CTAB
+M  END
+> <cas.rn>
+115956-12-2
+
+> <ca.index.name>
+1H-Indole-3-carboxylic acid, octahydro-3-oxo-2,6-methano-2H-quinolizin-8-yl ester, stereoisomer
+
+> <molecular.formula>
+C19H20N2O3
+
+> <smiles.canonical>
+O=C(OC1CC2N3CC(=O)C(C2)CC3C1)C4=CNC=5C=CC=CC54
+
+> <smiles.isomeric>
+O(C(=O)C=1C=2C(NC1)=CC=CC2)[C@@H]3C[C@]4([N@]5[C@](CC(C4)C(=O)C5)(C3)[H])[H]
+
+> <molecular.weight>
+324.37
+
+> <melting.point.experimental>
+276-278 °C
+
+> <boiling.point.predicted>
+535.144±50.00 °C    Press: 760.00 Torr
+
+> <density.predicted>
+1.374±0.10 g/cm3    Temp: 25 °C; Press: 760 Torr
+
+> <pka.predicted>
+15.363±0.30    Most Acidic Temp: 25 °C
+
+$$$$
