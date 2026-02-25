@@ -1,0 +1,62 @@
+; =================== NVT (replica-2) ===================
+; Integrator & length
+integrator              = md
+dt                      = 0.002          ; 2 fs
+nsteps                  = 100000         ; 200 ps
+
+; Start fresh from EM (no velocities yet)
+continuation            = no
+gen_vel                 = yes
+gen_temp                = 300
+gen_seed                = 22222        ; change per replica if needed
+
+; === Position restraints (protein + ligand) ===
+; POSRES      -> protein posre.itp
+; POSRES_LIG  -> ligand posre_DOL.itp
+define                  = -DPOSRES -DPOSRES_LIG
+
+; Thermostat
+tcoupl                  = V-rescale
+tc-grps                 = Protein_LIG  Water_and_ions
+tau-t                   = 0.5           0.5
+ref-t                   = 300           300
+
+; No barostat in NVT
+pcoupl                  = no
+
+; Nonbonded / PME (CHARMM36-like)
+cutoff-scheme           = Verlet
+nstlist                 = 20
+rlist                   = 1.2
+coulombtype             = PME
+rcoulomb                = 1.2
+fourierspacing          = 0.12
+pme-order               = 4
+ewald-rtol              = 1e-5
+vdwtype                 = Cut-off
+vdw-modifier            = Potential-switch
+rvdw-switch             = 1.0
+rvdw                    = 1.2
+DispCorr                = No
+
+; Constraints
+constraints             = h-bonds
+constraint-algorithm    = lincs
+lincs-order             = 4
+lincs-iter              = 2
+
+; PBC & COM
+pbc                     = xyz
+comm-mode               = Linear
+nstcomm                 = 100
+comm-grps               = System
+
+; Output
+nstxout                 = 0
+nstvout                 = 0
+nstfout                 = 0
+nstxout-compressed      = 1000          ; 2 ps / frame
+compressed-x-precision  = 1000
+nstenergy               = 1000
+nstlog                  = 1000
+nstcalcenergy           = 100
