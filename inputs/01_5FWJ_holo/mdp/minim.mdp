@@ -1,0 +1,17 @@
+; EM
+integrator      = steep
+nsteps          = 50000
+emtol           = 1000.0
+emstep          = 0.01
+
+cutoff-scheme   = Verlet
+nstlist         = 20
+coulombtype     = Cut-off
+rcoulomb        = 2.2
+vdwtype         = Cut-off
+vdw-modifier    = Potential-switch
+rvdw-switch     = 1.7
+rvdw            = 2.2
+pbc             = xyz
+constraints     = none
+define          = -DPOSRES -DPOSRES_LIG -DPOSRES_METAL   ; keep only for EM/NVT/NPT
