@@ -1,0 +1,66 @@
+;
+;	File 'topol.top' was generated
+;	By user: unknown (1000)
+;	On host: DESKTOP-9BMF7U8
+;	At date: Mon Dec  1 09:20:49 2025
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	              :-) GROMACS - gmx pdb2gmx, 2023.4-conda_forge (-:
+;	
+;	Executable:   /home/cau/anaconda3/envs/gmxMMPBSA/bin.AVX2_256/gmx
+;	Data prefix:  /home/cau/anaconda3/envs/gmxMMPBSA
+;	Working dir:  /home/cau/SIM/5fwj_DOL/Rep1
+;	Command line:
+;	  gmx pdb2gmx -f 5fwj_repaired.pdb -o 5fwj_processed.gro -ter
+;	Force field was read from current directory or a relative path - path added.
+;
+
+; Include forcefield parameters
+#include "./charmm36-jul2022.ff/forcefield.itp"
+
+; Include ligands parameters
+#include "dol.prm"
+#include "dol.itp"
+#ifdef POSRES_LIG
+#include "posre_DOL.itp"
+#endif
+
+; ===== Chain A =====
+#include "topol_Protein_chain_A.itp"
+#ifdef POSRES
+#include "posre_Protein_chain_A.itp"
+#endif
+
+; ===== Chain B =====
+#include "topol_Protein_chain_B.itp"
+#ifdef POSRES
+#include "posre_Protein_chain_B.itp"
+#endif
+
+; Include water topology
+#include "./charmm36-jul2022.ff/tip3p.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "./charmm36-jul2022.ff/ions.itp"
+
+[ system ]
+; Name
+Protein in water
+
+[ molecules ]
+; Compound        #mols
+Protein_chain_A     1
+Protein_chain_B     1
+DOL                    1
+SOL             41235
+NA              156
+CL               127
