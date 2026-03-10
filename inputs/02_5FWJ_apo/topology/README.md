@@ -1,1 +1,1 @@
-Topology files for the 02_5FWJ_apo system.
+This directory contains the topology and parameter files required to reproduce the 02_5FWJ_apo MD system, including the main topology file, ligand parameters, position restraint files, and the local CHARMM36 force-field include directory.
