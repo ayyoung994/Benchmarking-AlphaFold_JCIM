@@ -25,4 +25,4 @@ These analyses may include:
 
 ## Note
 
-This folder contains only the pocket-focused analyses for `01_5FWJ_holo`. Other analysis categories are organized separately.
+This folder contains only the pocket-focused analyses for `02_5FWJ_apo`. Other analysis categories are organized separately.
