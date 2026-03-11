@@ -31,7 +31,7 @@ The combined interpretation of these metrics allows discrimination between:
 
 All raw outputs required for this analysis are provided in `raw_outputs/`, and the scripts required to reproduce the processed results are provided in `scripts/`.# Ligand Behavior Analysis
 
-This directory contains the ligand behavior analyses for the `01_5FWJ_holo` simulation set.  
+This directory contains the ligand behavior analyses for the `02_5FWJ_apo` simulation set.  
 These analyses were performed to characterize ligand stability, positional retention, and interaction persistence within the binding pocket across three independent MD replicas.
 
 ## Directory structure
