@@ -6,5 +6,5 @@
 gmx gyrate -s md_repX_60_protein.tpr \
   -f md_0_60_center.xtc \
   -n jmjc.ndx \
-  -o rg_jmjc_EXPB_60_repX.xvg \
+  -o rg_jmjc_holo_60_repX.xvg \
   -tu ns
