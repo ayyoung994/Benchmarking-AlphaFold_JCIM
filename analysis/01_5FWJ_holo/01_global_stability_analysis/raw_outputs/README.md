@@ -4,7 +4,17 @@ This folder contains raw `.xvg` files generated directly from the `01_5FWJ_holo`
 
 ## Current contents
 
-At present, this directory includes RMSD output files for the three MD replicas.
+At present, this directory includes raw output files for the three MD replicas from the following analyses:
+
+- Cα RMSD
+- Cα RMSF
+- radius of gyration
+- total SASA
+- per-residue SASA
+
+## File naming
+
+Replica-specific outputs are stored using `rep1`, `rep2`, and `rep3` in the filenames.
 
 ## Note
 
