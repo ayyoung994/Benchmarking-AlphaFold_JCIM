@@ -10,7 +10,6 @@ This folder stores analyses used to evaluate the structural behavior and local p
 
 - `scripts/` — scripts used for pocket-focused calculations
 - `raw_outputs/` — raw analysis outputs and intermediate files
-- `processed_tables/` — cleaned summary tables for comparison and plotting
 - `README.md` — folder description
 
 ## Typical analyses
