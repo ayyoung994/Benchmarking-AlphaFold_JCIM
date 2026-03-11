@@ -21,8 +21,7 @@ These analyses may include:
 - residue-wise RMSF
 - radius of gyration
 - solvent-accessible surface area
-- hydrogen bond analysis
-- related global stability metrics
+
 
 ## Note
 
