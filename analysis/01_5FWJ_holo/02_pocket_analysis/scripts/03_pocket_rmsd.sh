@@ -6,6 +6,6 @@
 gmx rms -s md_repX.tpr \
   -f md_0_60_fit_core_4.xtc \
   -n jmjc.ndx \
-  -o rmsd_pocket_holo_repX.xvg \
+  -o rmsd_pocket_CA_holo_repX.xvg \
   -fit none \
   -tu ns
