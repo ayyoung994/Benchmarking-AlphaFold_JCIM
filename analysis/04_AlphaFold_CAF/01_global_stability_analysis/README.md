@@ -1,28 +1,20 @@
 # Global Stability Analysis
 
-This directory contains the global stability analysis workflow for the `04_AlphaFold_CAF` system in the KDM5C benchmarking study.
+This folder contains global stability analyses for the `04_AlphaFold_CAF` system.
 
-## Purpose
+## Included analyses
 
-This folder stores analyses used to assess the overall structural stability and conformational behavior of the receptor throughout the MD trajectory.
-
-## Contents
-
-- `scripts/` — scripts used for the calculations
-- `raw_outputs/` — raw analysis outputs and intermediate files
-- `processed_tables/` — cleaned summary tables for comparison and plotting
-- `README.md` — folder description
-
-## Typical analyses
-
-These analyses may include:
-
-- backbone or protein RMSD
-- residue-wise RMSF
+- Cα RMSD
+- Cα RMSF
 - radius of gyration
-- solvent-accessible surface area
+- protein SASA
 
+## Folder contents
 
-## Note
+- `scripts/` — GROMACS command scripts used for each analysis
+- `raw_outputs/` — raw `.xvg` files generated directly from GROMACS
+- `processed_tables/` — cleaned summary tables for comparison and plotting
 
-This folder contains only the global stability analyses for `04_AlphaFold_CAF`. Other analysis categories are organized separately.
+## Notes
+
+Trajectory files and topology files used for these analyses were prepared during the trajectory preprocessing stage.
