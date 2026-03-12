@@ -33,3 +33,11 @@ The centered trajectory was least-squares fitted to `JmjC_ChainB_CA` using `gmx 
 - Output group: `System`
 
 Together, these preprocessing steps generated a cleaned, centered, and structurally aligned trajectory suitable for downstream ligand binding analysis.
+
+## Scripts
+
+The following shell scripts were used in this workflow:
+
+- `ligand_nojump.sh` — removes PBC jumps from the full system trajectory
+- `ligand_center.sh` — centers the trajectory on chain B and reconstructs whole molecules
+- `ligand_fit.sh` — aligns the trajectory to `JmjC_ChainB_CA` for ligand binding analysis
