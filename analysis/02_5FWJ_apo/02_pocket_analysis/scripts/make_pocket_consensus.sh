@@ -11,16 +11,16 @@ INDEX_OUT="jmjc.ndx"
 
 gmx make_ndx -f "$STRUCTURE_FILE" -n "$INDEX_IN" -o "$INDEX_OUT" << 'EOF'
 r 440 | r 442 | r 443 | r 495 | r 496 | r 501 | r 503 | r 510 | r 511 | r 512 | r 514 | r 515 | r 516 | r 517 | r 522 | r 524 | r 532 | r 534 | r 602 | r 614 | r 616
-name 36 Pocket_Consensus
+name 30 Pocket_Consensus
 
-26 & 36
-name 37 Pocket_JmjCB
+23 & 30
+name 31 Pocket_JmjCB
 
-37 & 3
-name 38 Pocket_JmjCB_CA
+31 & 3
+name 32 Pocket_JmjCB_CA
 
-37 & 4
-name 39 Pocket_JmjCB_BB
+31 & 4
+name 33 Pocket_JmjCB_BB
 
 q
 EOF
