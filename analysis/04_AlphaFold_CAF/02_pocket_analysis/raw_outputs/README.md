@@ -8,7 +8,7 @@ At present, this directory includes raw output files for the three MD replicas f
 
 - pocket Cα RMSD (`rmsd_pocket_CA_*`)
 - pocket radius of gyration (`rg_pocket_*`)
-- pocket-only SASA (`sasa_Pocketonly_*`)
+- pocket-only SASA (`sasa_pocketonly_*`)
 - JmjC-and-pocket SASA (`sasa_jmjc_and_pocket_*`)
 
 ## File naming
