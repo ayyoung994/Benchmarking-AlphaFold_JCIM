@@ -40,8 +40,8 @@ Together, these two SASA calculations distinguish solvent exposure of the pocket
 
 The following shell scripts were used in this workflow:
 
-- `make_pocket_consensus.sh`: defines the consensus pocket and derived index groups
-- `pocket_rmsd.sh`: calculates pocket RMSD
-- `pocket_rg.sh`: calculates pocket radius of gyration (Rg)
-- `pocket_sasa.sh`: calculates SASA for JmjC and the consensus pocket
-- `pocket_sasa_only.sh`: calculates SASA for the consensus pocket only
+- `make_pocket_consensus.sh` — defines the consensus pocket and derived index groups
+- `pocket_rmsd.sh` — calculates pocket RMSD
+- `pocket_rg.sh` — calculates pocket radius of gyration (Rg)
+- `pocket_sasa.sh` — calculates SASA for JmjC and the consensus pocket
+- `pocket_sasa_only.sh` — calculates SASA for the consensus pocket only
