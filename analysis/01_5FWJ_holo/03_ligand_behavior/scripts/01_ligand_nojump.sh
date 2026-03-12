@@ -3,9 +3,10 @@ set -euo pipefail
 
 # Replace repX with rep1, rep2, or rep3 before running.
 # Remove PBC jumps from the full system trajectory.
+# The documented holo trajectory-preparation workflow was reconstructed from rep2.
 
-TPR_FILE="md_repX.tpr"
-XTC_FILE="md_repX.xtc"
+TPR_FILE="md_repX_60.tpr"
+XTC_FILE="md_repX_60.xtc"
 OUTPUT_FILE="md_nojump_ligand.xtc"
 
 printf "0\n" | gmx trjconv \
