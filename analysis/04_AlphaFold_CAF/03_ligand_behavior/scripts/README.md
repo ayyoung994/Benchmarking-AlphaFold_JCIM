@@ -32,7 +32,7 @@ The centered trajectory was least-squares fitted to `JmjC_CA` using `gmx trjconv
 - Fit group: `JmjC_CA`
 - Output group: `System`
 
-### 4. Alignment to AF JmjC Cα
+### 4. Ligand RMSD
 
 Ligand RMSD was calculated for `DOL_heavy` using the trajectory pre-aligned to `JmjC_CA` (`md_fit_ligand.xtc`). During `gmx rms`, `JmjC_CA` was used as the least-squares fit group and `DOL_heavy` was used as the RMSD calculation group.
 
