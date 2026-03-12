@@ -5,7 +5,7 @@ set -euo pipefail
 # Calculate pocket RMSD for the Pocket_JmjCB_CA group.
 # The trajectory was pre-aligned to the core, so RMSD is computed with -fit none.
 
-TPR_FILE="md_repX_60.tpr"
+TPR_FILE="md_repX.tpr"
 XTC_FILE="md_0_60_fit_core_4.xtc"
 INDEX_FILE="jmjc.ndx"
 OUTPUT_FILE="rmsd_pocket_apo_repX.xvg"
