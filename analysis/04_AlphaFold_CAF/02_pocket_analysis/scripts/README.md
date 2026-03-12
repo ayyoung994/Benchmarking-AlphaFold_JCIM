@@ -32,7 +32,7 @@ Solvent-accessible surface area (SASA) was calculated using `JmjC_all` as the re
 
 ### 5. SASA of the pocket only
 
-SASA was also calculated for the consensus pocket region alone by using `Pocket_JmjC_all` as both the surface selection and the output selection, based on the centered trajectory (`md_0_60_center_4.xtc`).
+SASA was also calculated for the consensus pocket region alone using `Pocket_JmjC_all` as both the surface selection and the output selection, based on the centered trajectory (`md_0_60_center_4.xtc`).
 
 Together, these two SASA calculations distinguish solvent exposure of the pocket within the full JmjC domain environment from solvent exposure of the pocket region alone.
 
