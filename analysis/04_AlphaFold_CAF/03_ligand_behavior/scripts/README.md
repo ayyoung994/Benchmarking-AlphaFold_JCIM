@@ -32,6 +32,12 @@ The centered trajectory was least-squares fitted to `JmjC_CA` using `gmx trjconv
 - Fit group: `JmjC_CA`
 - Output group: `System`
 
+### 4. Alignment to AF JmjC Cα
+
+Ligand RMSD was calculated for `DOL_heavy` using the trajectory pre-aligned to `JmjC_CA` (`md_fit_ligand.xtc`). During `gmx rms`, `JmjC_CA` was used as the least-squares fit group and `DOL_heavy` was used as the RMSD calculation group.
+
+This analysis was used to monitor the positional stability of the ligand heavy atoms relative to the AF JmjC reference frame over the simulation.
+
 Together, these preprocessing steps generated a cleaned, centered, and structurally aligned trajectory suitable for downstream ligand binding analysis.
 
 ## Scripts
@@ -41,3 +47,4 @@ The following shell scripts were used in this workflow:
 - `ligand_nojump.sh` — removes PBC jumps from the full system trajectory
 - `ligand_center.sh` — centers the trajectory on `JmjC_all` and reconstructs whole molecules
 - `ligand_fit.sh` — aligns the trajectory to `JmjC_CA` for ligand binding analysis
+- `ligand_rmsd.sh` — calculates ligand RMSD for `DOL_heavy` after alignment to `JmjC_CA`
