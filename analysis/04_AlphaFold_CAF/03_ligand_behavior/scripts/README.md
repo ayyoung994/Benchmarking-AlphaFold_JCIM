@@ -32,13 +32,27 @@ The centered trajectory was least-squares fitted to `JmjC_CA` using `gmx trjconv
 - Fit group: `JmjC_CA`
 - Output group: `System`
 
+Together, these preprocessing steps generated a cleaned, centered, and structurally aligned trajectory suitable for downstream ligand binding analysis.
+
+## Ligand Behavior Analysis
+
 ### 4. Ligand RMSD
 
-Ligand RMSD was calculated for `DOL_heavy` using the trajectory pre-aligned to `JmjC_CA` (`md_fit_ligand.xtc`). During `gmx rms`, `JmjC_CA` was used as the least-squares fit group and `DOL_heavy` was used as the RMSD calculation group.
+Ligand RMSD was calculated for `DOL_heavy` using the fitted trajectory (`md_fit_ligand.xtc`). During `gmx rms`, `JmjC_CA` was used as the least-squares fit group and `DOL_heavy` was used as the RMSD calculation group.
 
 This analysis was used to monitor the positional stability of the ligand heavy atoms relative to the AF JmjC reference frame over the simulation.
 
-Together, these preprocessing steps generated a cleaned, centered, and structurally aligned trajectory suitable for downstream ligand binding analysis.
+### 5. Ligand–pocket COM distance
+
+The center-of-mass (COM) distance between `DOL_heavy` and `Pocket_JmjC_all` was calculated using `gmx distance` on the fitted trajectory (`md_fit_ligand.xtc`).
+
+This analysis was used to monitor the relative position of the ligand with respect to the consensus pocket over the simulation.
+
+### 6. Ligand–pocket hydrogen bonds
+
+Hydrogen bonds were calculated between `DOL_heavy` and `Pocket_JmjC_all` using `gmx hbond` on the fitted trajectory (`md_fit_ligand.xtc`). During the analysis, `DOL_heavy` was used as the reference selection and `Pocket_JmjC_all` was used as the target selection.
+
+This analysis was used to monitor hydrogen-bonding interactions between the ligand and the consensus pocket region over the simulation.
 
 ## Scripts
 
@@ -48,3 +62,5 @@ The following shell scripts were used in this workflow:
 - `ligand_center.sh` — centers the trajectory on `JmjC_all` and reconstructs whole molecules
 - `ligand_fit.sh` — aligns the trajectory to `JmjC_CA` for ligand binding analysis
 - `ligand_rmsd.sh` — calculates ligand RMSD for `DOL_heavy` after alignment to `JmjC_CA`
+- `ligand_com_distance.sh` — calculates the COM distance between `DOL_heavy` and `Pocket_JmjC_all`
+- `ligand_hbond.sh` — calculates hydrogen bonds between `DOL_heavy` and `Pocket_JmjC_all`
