@@ -35,3 +35,13 @@ Solvent-accessible surface area (SASA) was calculated using `JmjC_all` as the re
 SASA was also calculated for the consensus pocket region alone by using `Pocket_JmjC_all` as both the surface selection and the output selection, based on the centered trajectory (`md_0_60_center_4.xtc`).
 
 Together, these two SASA calculations distinguish solvent exposure of the pocket within the full JmjC domain environment from solvent exposure of the pocket region alone.
+
+## Scripts
+
+The following shell scripts were used in this workflow:
+
+- `make_pocket_consensus.sh`: defines the consensus pocket and derived index groups
+- `pocket_rmsd.sh`: calculates pocket RMSD
+- `pocket_rg.sh`: calculates pocket radius of gyration (Rg)
+- `pocket_sasa.sh`: calculates SASA for JmjC and the consensus pocket
+- `pocket_sasa_only.sh`: calculates SASA for the consensus pocket only
