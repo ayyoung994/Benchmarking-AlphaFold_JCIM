@@ -16,7 +16,7 @@ MM/GBSA results are organized by replica:
 Replica-specific result folders may contain:
 
 - `gmx_MMPBSA_apo_rep*.log` — execution log with command, selected groups, processed frames, and run status
-- `FINAL_RESULTS_MMPBSA_apo_rep*.dat` — final MM/GBSA energy summary
+- `FINAL_RESULTS_MMPBSA_apo_rep*.dat` — final MM/GBSA energy summaries
 - `FINAL_RESULTS_PER_FRAME_apo_rep*.dat` — per-frame MM/GBSA energy values
 - `README.md` — short description of the files in that replica folder
 
@@ -26,9 +26,8 @@ The `summary/` folder may include cleaned tables such as:
 
 - combined MM/GBSA binding energy summary across replicas
 - per-replica comparison tables
-- selected decomposition summary tables, where applicable
 
 ## Notes
 
 - The same MM/GBSA workflow and parameter settings were applied across replicas unless otherwise noted.
-- Not all result types may be present for every replica. For example, decomposition output files are included only when decomposition analysis was performed.
+- Only the MM/GBSA result files generated in this workflow are included in this directory.
