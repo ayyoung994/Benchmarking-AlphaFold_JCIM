@@ -15,10 +15,9 @@ MM/GBSA results are organized by replica:
 
 Replica-specific result folders may contain:
 
-- `gmx_MMPBSA.log` — execution log with command, selected groups, processed frames, and run status
-- `FINAL_RESULTS_MMPBSA.dat` — final MM/GBSA energy summary
-- `FINAL_RESULTS_PER_FRAME.dat` — per-frame MM/GBSA energy values
-- `FINAL_DECOMP_MMPBSA.dat` — per-residue decomposition results, when decomposition analysis was performed
+- `gmx_MMPBSA_holo_rep*.log` — execution log with command, selected groups, processed frames, and run status
+- `FINAL_RESULTS_MMPBSA_holo_rep*.dat` — final MM/GBSA energy summary
+- `FINAL_RESULTS_PER_FRAME_holo_rep*.dat` — per-frame MM/GBSA energy values
 - `README.md` — short description of the files in that replica folder
 
 ## Summary files
