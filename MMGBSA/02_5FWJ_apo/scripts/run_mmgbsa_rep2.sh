@@ -27,6 +27,6 @@ gmx_MMPBSA -O \
   -cp topol.top \
   -ci jmjc.ndx \
   -cg 23 13 \
-  -o FINAL_RESULTS_MMPBSA_apo_rep1.dat \
-  -eo FINAL_RESULTS_PER_FRAME_apo_rep1.dat \
+  -o FINAL_RESULTS_MMPBSA_apo_rep2.dat \
+  -eo FINAL_RESULTS_PER_FRAME_apo_rep2.dat \
   -nogui
