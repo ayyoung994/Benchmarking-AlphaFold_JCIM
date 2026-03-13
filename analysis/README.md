@@ -11,25 +11,18 @@ This directory contains post-MD analysis workflows for the KDM5C benchmarking sy
 
 ## Folder organization
 
-Each system-specific folder contains:
+Each system-specific folder is organized into analysis modules such as:
 
-- `scripts/`  
-  Analysis scripts used for calculations such as RMSD, RMSF, ligand behavior, COM distance, and related post-processing
+- `01_global_stability_analysis/` — global structural stability analyses, including RMSD, RMSF, radius of gyration, and SASA
+- `02_pocket_analysis/` — pocket-focused analyses, including pocket RMSD, pocket radius of gyration, and pocket-related SASA metrics
+- `03_ligand_behavior/` — ligand-focused analyses, including ligand RMSD, COM distance, and hydrogen bonds metrics
 
-- `raw_outputs/`  
-  Raw files produced during analysis (for example `.xvg`, `.dat`, or other intermediate outputs)
+Within each analysis module, the following subfolders may be included:
 
-- `processed_tables/`  
-  Cleaned summary tables and exported values used for comparison across replicas and receptor models
+- `scripts/` — shell scripts or helper scripts used to run each analysis
+- `raw_outputs/` — raw files generated directly from analysis tools such as GROMACS
+- `README.md` — brief documentation describing the analysis workflow and file contents
 
-- `README.md`  
-  A brief description of the workflow and any system-specific analysis considerations
+## Notes
 
-## Rationale
-
-The analysis workflows were organized by system because the post-simulation analyses were not completely identical for all receptor models.  
-This structure preserves the exact workflow used for each system and improves reproducibility.
-
-## Related directories
-
-The corresponding MD preparation and simulation input files are stored in the `inputs/` directory.
+Not all analysis modules apply to every system. For example, ligand behavior analysis may not be applicable to apo systems unless otherwise noted.
