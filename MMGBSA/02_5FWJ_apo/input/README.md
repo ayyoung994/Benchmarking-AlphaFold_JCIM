@@ -5,7 +5,7 @@ This directory contains the input files used for MM/GBSA calculations for the `0
 ## Contents
 
 - `mmpbsa.in` — MM/GBSA parameter file used for energy calculations
-- `jmjc_mmpbsa.ndx` — index file defining the receptor and ligand groups used for MM/GBSA
+- `jmjc.ndx` — index file defining the receptor and ligand groups used for MM/GBSA
 - `README.md` — description of the input files in this directory
 
 ## Receptor and ligand definition
