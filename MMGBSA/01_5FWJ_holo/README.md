@@ -30,9 +30,9 @@ Typical files associated with this system include:
 - `mmpbsa.in` — MM/GBSA parameter file
 - `jmjc_mmpbsa.ndx` — index file used to define receptor and ligand groups
 - `run_mmgbsa_rep*.sh` — replica-specific execution scripts
-- `gmx_MMPBSA.log` — execution log for each run
-- `FINAL_RESULTS_MMPBSA.dat` — final MM/GBSA energy summary
-- `FINAL_RESULTS_PER_FRAME.dat` — per-frame MM/GBSA energy results
+- `gmx_MMPBSA_holo_rep*.log` — execution log for each run
+- `FINAL_RESULTS_MMPBSA_holo_rep*.dat` — final MM/GBSA energy summary
+- `FINAL_RESULTS_PER_FRAME_holo_rep*.dat` — per-frame MM/GBSA energy results
 
 ## Notes
 
