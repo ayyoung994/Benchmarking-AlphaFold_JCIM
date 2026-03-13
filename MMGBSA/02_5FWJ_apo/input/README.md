@@ -5,7 +5,7 @@ This directory contains the input files used for MM/GBSA calculations for the `0
 ## Contents
 
 - `mmpbsa.in` — MM/GBSA parameter file used for energy calculations
-- `jmjc.ndx` — index file defining the receptor and ligand groups used for MM/GBSA
+- `jmjc.ndx` — index file used for receptor and ligand group selection in the MM/GBSA workflow
 - `README.md` — description of the input files in this directory
 
 ## Receptor and ligand definition
@@ -17,6 +17,7 @@ The ligand group was:
 
 ## Notes
 
-- The MM/GBSA index file was prepared from `jmjc.ndx` using `gmx make_ndx`.
+- For this system, MM/GBSA group selection was performed using `jmjc.ndx` directly.
+- A separate MM/GBSA-specific index file was not generated for this system.
 - The same MM/GBSA input settings were applied consistently across replicas for this system unless otherwise noted.
 - Replica-specific trajectory and topology files are referenced during execution in the corresponding `scripts/` and `results/` directories.
