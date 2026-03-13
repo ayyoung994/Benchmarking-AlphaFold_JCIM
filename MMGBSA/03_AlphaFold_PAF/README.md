@@ -4,7 +4,7 @@ This directory contains MM/GBSA input files, execution scripts, and result files
 
 ## System description
 
-`03_AlphaFold_PAF` is the public AlphaFold-derived model. In the MM/GBSA receptor definition, metal and cofactor groups were not included.
+`03_AlphaFold_PAF` is the public AlphaFold-derived model.
 
 ## Folder organization
 
