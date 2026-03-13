@@ -11,31 +11,31 @@ This directory contains MM/GBSA workflows and result files for the KDM5C benchma
 
 ## Folder organization
 
-This directory is organized into workflow components for MM/GBSA setup, execution, and result collection:
+This directory is organized by system. Each system-specific folder contains the MM/GBSA input files, execution scripts, and result files for that system.
 
-- `input/` — MM/GBSA input files, including `mmpbsa.in`, index files, and setup notes
-- `scripts/` — shell scripts used to run MM/GBSA calculations for each system and replica
+Each system folder may include:
+
+- `input/` — shared MM/GBSA input files, including `mmpbsa.in`, index files, and setup notes
+- `scripts/` — shell scripts used to run MM/GBSA calculations for individual replicas
 - `results/` — replica-specific MM/GBSA outputs and system-level summary tables
-- `metadata/` — software version information and additional run metadata
-- `README.md` — overview of the MM/GBSA workflow and file organization
+- `README.md` — overview of the MM/GBSA workflow and file organization for that system
 
 Within the `results/` directory, each system-specific folder may contain:
 
-- `rep1/`, `rep2/`, `rep3/` — raw output files from individual MM/GBSA runs for each replica
-- `summary/` — cleaned summary tables for comparison across replicas and systems
+- `rep1/`, `rep2/`, `rep3/` — output files from individual MM/GBSA runs for each replica
+- `summary/` — cleaned summary tables for comparison across replicas
 
 ## Main files
 
-The main MM/GBSA-related files in this directory may include:
+The main MM/GBSA-related files in each system directory may include:
 
 - `mmpbsa.in` — MM/GBSA input parameter file
 - `*.ndx` — index files defining receptor and ligand groups
-- `run_mmgbsa_*.sh` — execution scripts for MM/GBSA calculations
-- `gmx_MMPBSA.log` — execution log containing the exact command, selected groups, and run status
-- `FINAL_RESULTS_MMPBSA.dat` — final MM/GBSA energy summary
-- `FINAL_RESULTS_PER_FRAME.dat` — per-frame MM/GBSA energy results
-- `FINAL_DECOMP_MMPBSA.dat` — per-residue decomposition results, where applicable
+- `run_mmgbsa_rep*.sh` — execution scripts for MM/GBSA calculations
+- `gmx_MMPBSA*.log` — execution logs containing the exact command, selected groups, and run status
+- `FINAL_RESULTS_MMPBSA*.dat` — final MM/GBSA energy summaries
+- `FINAL_RESULTS_PER_FRAME*.dat` — per-frame MM/GBSA energy results
 
 ## Notes
 
-Not all MM/GBSA result types may be present for every system. For example, per-residue decomposition files are included only when decomposition analysis was performed.
+Not all MM/GBSA result types may be present for every system. For example, per-residue decomposition files are included only when decomposition analysis was performed. File naming may vary slightly across systems depending on the replica-specific naming convention used.
