@@ -21,3 +21,12 @@ gmx trjconv \
 gmx make_ndx \
   -f frame0.pdb \
   -o jmjc.ndx
+
+# Interactive commands used in make_ndx:
+# r 468-634
+# name 21 JmjC_all
+# 21 & 3
+# name 22 JmjC_CA
+# 21 & 7
+# name 23 JmjC_MainChainH
+# q
