@@ -1,47 +1,48 @@
-# Pocket Analysis
+# Pocket Analysis Scripts
 
-## Overview
+This directory contains shell scripts used for preprocessing and pocket-focused analysis of the `04_AlphaFold_CAF` system.
 
-`Pocket_Consensus` denotes the consensus binding-site residue set shared across multiple receptor models and used as a common reference pocket for local JmjC domain analysis.
+## Script organization
 
-## Analysis Steps
+The scripts are arranged in workflow order.
 
-### 1. Pocket consensus definition
+### Template preprocessing scripts
 
-A consensus binding-site residue set (`Pocket_Consensus`) was defined from residues shared across multiple receptor models. The following derived index groups were then generated for downstream analyses:
+These scripts use `repX` as a placeholder and should be edited to match the replica-specific filenames before use.
 
-- `Pocket_JmjC_all`
-- `Pocket_JmjC_CA`
-- `Pocket_JmjC_BB`
+- `01_make_pocket_consensus_template.sh` — template for creating the pocket-related index groups used for downstream pocket analysis
+- `02_center_pocket_trajectory_template.sh` — template for centering the trajectory and making molecules whole for pocket analysis
+- `03_fit_pocket_core_template.sh` — template for fitting the trajectory to the JmjC core before pocket RMSD and related comparisons
 
-These groups were used to evaluate local pocket dynamics and structural compactness within the JmjC domain.
+### Analysis scripts
 
-### 2. Pocket RMSD
+These scripts were used for the final pocket-focused calculations.
 
-Pocket RMSD was computed for the `Pocket_JmjC_CA` group using the pre-aligned core-fitted trajectory (`md_0_60_fit_core_4.xtc`). No additional fitting was applied during RMSD calculation (`-fit none`).
+- `04_pocket_rmsd.sh` — pocket RMSD calculation
+- `05_pocket_rg.sh` — pocket radius of gyration calculation
+- `06_pocket_sasa.sh` — pocket SASA calculation
+- `07_pocket_sasa_only.sh` — pocket-only SASA calculation
 
-### 3. Pocket radius of gyration (Rg)
+## Workflow order
 
-Pocket radius of gyration (Rg) was computed for the `Pocket_JmjC_BB` group using the centered trajectory (`md_0_60_center_4.xtc`).
+The scripts follow this general workflow:
 
-For pocket-level dynamics, RMSD was evaluated using `Pocket_JmjC_CA`, whereas Rg was evaluated using `Pocket_JmjC_BB` to monitor local backbone compactness within the consensus pocket region.
+1. create pocket-related index groups
+2. center and compact the trajectory
+3. fit the trajectory to the JmjC core
+4. calculate pocket RMSD
+5. calculate pocket radius of gyration
+6. calculate pocket SASA
+7. calculate pocket-only SASA
 
-### 4. SASA of JmjC and pocket
+## Replica note
 
-Solvent-accessible surface area (SASA) was calculated using `JmjC_all` as the reference molecular surface and `Pocket_JmjC_all` as the output selection, based on the centered trajectory (`md_0_60_center_4.xtc`). This analysis was used to monitor solvent exposure of the consensus pocket region within the JmjC domain context.
+- The template preprocessing scripts in this directory use `repX` as a placeholder. Replace `repX` with the appropriate replica identifier (for example, `rep1`, `rep2`, or `rep3`) before running the commands.
+- The `04_AlphaFold_CAF` system was extended to 60 ns before downstream pocket analysis.
+- Pocket preprocessing for this system used AlphaFold-based JmjC and pocket index groups defined directly from the residue range corresponding to the JmjC region, without chain-specific subdivision.
 
-### 5. SASA of the pocket only
+## Notes
 
-SASA was also calculated for the consensus pocket region alone using `Pocket_JmjC_all` as both the surface selection and the output selection, based on the centered trajectory (`md_0_60_center_4.xtc`).
-
-Together, these two SASA calculations distinguish solvent exposure of the pocket within the full JmjC domain environment from solvent exposure of the pocket region alone.
-
-## Scripts
-
-The following shell scripts were used in this workflow:
-
-- `make_pocket_consensus.sh` — defines the consensus pocket and derived index groups
-- `pocket_rmsd.sh` — calculates pocket RMSD
-- `pocket_rg.sh` — calculates pocket radius of gyration (Rg)
-- `pocket_sasa.sh` — calculates SASA for JmjC and the consensus pocket
-- `pocket_sasa_only.sh` — calculates SASA for the consensus pocket only
+- The template scripts are provided to document the common preprocessing workflow used before pocket-focused analysis.
+- Interactive GROMACS selections are recorded as comments inside the relevant scripts.
+- Pocket-related index groups were generated from the prepared `jmjc.ndx` workflow for this system.
