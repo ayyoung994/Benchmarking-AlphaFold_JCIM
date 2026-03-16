@@ -1,0 +1,4 @@
+﻿Replica,file,VDWAALS (avg),VDWAALS (SD within),EEL (avg),EEL (SD within),EGB (avg),EGB (SD within),ESURF (avg),ESURF (SD within),GGAS (avg),GGAS (SD within),GSOLV (avg),GSOLV (SD within),TOTAL (avg),TOTAL (SD within),Matched TOTAL line
+Rep 1,FINAL_RESULTS_MMGBSA_CAF_rep1.dat,-17.59,2.33,-8.89,2.45,21.9,2.16,-2.62,0.24,-26.48,2.84,19.28,2.05,-7.2,1.7,ΔTOTAL                   -7.20          1.87       1.70         0.08       0.07
+Rep 2,FINAL_RESULTS_MMGBSA_CAF_rep2.dat,-14.16,7.12,-8.76,7.78,19.32,10.1,-2.05,0.99,-22.92,14.16,17.27,9.15,-5.64,5.28,ΔTOTAL                   -5.64          2.43       5.28         0.10       0.22
+Rep 3,FINAL_RESULTS_MMGBSA_CAF_rep3.dat,-10.43,5.8,-1.29,7.5,9.21,9.68,-1.42,0.89,-11.72,12.53,7.8,8.87,-3.93,4.1,ΔTOTAL                   -3.93          5.13       4.10         0.21       0.17
