@@ -30,8 +30,8 @@ Typical files associated with this system include:
 - `mmpbsa.in` — MM/GBSA parameter file
 - `jmjc_mmpbsa.ndx` — index file used to define receptor and ligand groups
 - `run_mmgbsa_rep*.sh` — replica-specific execution scripts
-- `gmx_MMPBSA_CAF_rep*.log` — execution log for each MM/GBSA run
-- `FINAL_RESULTS_MMPBSA_CAF_rep*.dat` — final MM/GBSA energy summaries
+- `gmx_MMGBSA_CAF_rep*.log` — execution log for each MM/GBSA run
+- `FINAL_RESULTS_MMGBSA_CAF_rep*.dat` — final MM/GBSA energy summaries
 - `FINAL_RESULTS_PER_FRAME_CAF_rep*.dat` — per-frame MM/GBSA energy results
 
 ## Notes
