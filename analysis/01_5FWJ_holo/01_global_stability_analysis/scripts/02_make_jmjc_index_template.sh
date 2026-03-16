@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 set -e
 
-# Create JmjC- and pocket-related index groups for downstream analyses
-# Replace `md_repX_60.tpr` with the replica-specific base filename.
+# Template script for creating JmjC- and pocket-related index groups
+# for downstream analyses.
+#
+# Replace `md_repX_60.tpr` with the replica-specific TPR filename.
+# This script assumes that `md_0_60.xtc` has already been prepared.
 
 # Step 1. Extract frame 0 as PDB
 gmx trjconv \
