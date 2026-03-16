@@ -1,0 +1,29 @@
+﻿System,Term,Mean ± SD (kcal/mol)
+holo,VDWAALS,-12.31 ± 10.05
+holo,EEL,-6.23 ± 3.77
+holo,EGB,17.01 ± 12.68
+holo,ESURF,-1.64 ± 1.31
+holo,GGAS,-18.54 ± 13.19
+holo,GSOLV,15.37 ± 11.37
+holo,ΔGbind (ΔTOTAL),-3.16 ± 2.94
+apo,VDWAALS,-5.36 ± 4.58
+apo,EEL,-0.67 ± 0.56
+apo,EGB,3.28 ± 2.76
+apo,ESURF,-0.71 ± 0.60
+apo,GGAS,-6.02 ± 5.14
+apo,GSOLV,2.57 ± 2.16
+apo,ΔGbind (ΔTOTAL),-3.45 ± 3.05
+PAF,VDWAALS,-16.86 ± 6.09
+PAF,EEL,-9.76 ± 7.14
+PAF,EGB,23.39 ± 9.37
+PAF,ESURF,-2.23 ± 0.80
+PAF,GGAS,-26.62 ± 11.94
+PAF,GSOLV,21.17 ± 8.69
+PAF,ΔGbind (ΔTOTAL),-5.45 ± 3.30
+CAF,VDWAALS,-14.06 ± 3.58
+CAF,EEL,-6.31 ± 4.35
+CAF,EGB,16.81 ± 6.71
+CAF,ESURF,-2.03 ± 0.60
+CAF,GGAS,-20.37 ± 7.70
+CAF,GSOLV,14.78 ± 6.13
+CAF,ΔGbind (ΔTOTAL),-5.59 ± 1.64
