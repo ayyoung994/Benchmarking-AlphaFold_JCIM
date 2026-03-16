@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 set -e
 
 # Extend MD production run from 20 ns to 60 ns for Replica 1
