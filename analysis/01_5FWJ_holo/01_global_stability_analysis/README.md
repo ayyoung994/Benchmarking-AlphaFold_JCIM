@@ -1,6 +1,6 @@
 # Global Stability Analysis
 
-This folder contains global stability analyses for the `01_5FWJ_holo` system.
+This directory contains the global stability analysis workflow for the `01_5FWJ_holo` system.
 
 ## Included analyses
 
@@ -11,10 +11,29 @@ This folder contains global stability analyses for the `01_5FWJ_holo` system.
 
 ## Folder contents
 
-- `scripts/` — GROMACS command scripts used for each analysis
-- `raw_outputs/` — raw `.xvg` files generated directly from GROMACS
-- `processed_tables/` — cleaned summary tables for comparison and plotting
+- `scripts/` — shell scripts used for preprocessing and global stability analysis
+- `raw_outputs/` — raw output files generated directly from GROMACS during the analysis workflow
+- `README.md` — overview of the analysis workflow and file organization
+
+## Workflow overview
+
+The global stability analysis workflow includes:
+
+1. preparation of a continuous 0–60 ns trajectory when needed
+2. generation of JmjC-related index groups
+3. centering and compacting the trajectory
+4. fitting the trajectory to the JmjC core
+5. extraction of a protein-only TPR
+6. calculation of RMSD
+7. calculation of RMSF
+8. calculation of radius of gyration
+9. calculation of protein SASA
 
 ## Notes
 
-Trajectory files and topology files used for these analyses were prepared during the trajectory preprocessing stage.
+- For the `01_5FWJ_holo` system, Replicas 2 and 3 were extended to 60 ns before downstream analysis.
+- Replica 1 followed a different recovery workflow because the original MD production files were unavailable and the production run was regenerated.
+- The preprocessing templates in `scripts/` use `repX` as a placeholder and should be edited to match replica-specific filenames before use.
+- For the crystal-structure-based holo system, JmjC index groups were defined using chain-specific subdivision and the corresponding JmjC residue range.
+- Interactive GROMACS selections are recorded as comments inside the relevant scripts.
+- Raw `.xvg` files in `raw_outputs/` were used for downstream comparison and plotting.
