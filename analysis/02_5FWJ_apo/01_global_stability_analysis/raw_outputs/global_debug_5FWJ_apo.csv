@@ -1,0 +1,10 @@
+System,Metric,Replica,Mean,SD,Mean ± SD,Npoints in window,t_first(ns),t_last(ns),Source file
+5FWJ_apo,Cα RMSD (nm),Rep 1,0.142530482525,0.016184409627013764,0.143 ± 0.016,4000,0.0,60.0000038,rmsd_jmjc_CA_apo_rep1.xvg
+5FWJ_apo,Cα RMSD (nm),Rep 2,0.128613357925,0.012362740248561016,0.129 ± 0.012,4000,0.0,60.0000038,rmsd_jmjc_CA_apo_rep2.xvg
+5FWJ_apo,Cα RMSD (nm),Rep 3,0.20308869715,0.02068282388228378,0.203 ± 0.021,4000,0.0,60.0000038,rmsd_jmjc_CA_apo_rep3.xvg
+5FWJ_apo,Radius of gyration (Rg) (nm),Rep 1,1.652797767308173,0.012174036283751213,1.653 ± 0.012,4001,0.0,60.0,rg_jmjc_apo_rep1.xvg
+5FWJ_apo,Radius of gyration (Rg) (nm),Rep 2,1.6464762601849536,0.009057096277921357,1.646 ± 0.009,4001,0.0,60.0,rg_jmjc_apo_rep2.xvg
+5FWJ_apo,Radius of gyration (Rg) (nm),Rep 3,1.6792727633091726,0.011271940927440735,1.679 ± 0.011,4001,0.0,60.0,rg_jmjc_apo_rep3.xvg
+5FWJ_apo,SASA (nm$^2$),Rep 1,96.15568407898026,1.4984072265805977,96.156 ± 1.498,4001,0.0,60.0,sasa_total_apo_rep1.xvg
+5FWJ_apo,SASA (nm$^2$),Rep 2,94.84993851537115,1.665426012231914,94.850 ± 1.665,4001,0.0,60.0,sasa_total_apo_rep2.xvg
+5FWJ_apo,SASA (nm$^2$),Rep 3,98.24106223444139,1.379514970877774,98.241 ± 1.380,4001,0.0,60.0,sasa_total_apo_rep3.xvg
