@@ -1,6 +1,6 @@
 # Processed Outputs
 
-This directory contains processed output files for the `01_5FWJ_holo` global stability analysis workflow.
+This directory contains processed output files for the `01_5FWJ_holo` global stability analysis workflow. 
 
 ## Current contents
 
