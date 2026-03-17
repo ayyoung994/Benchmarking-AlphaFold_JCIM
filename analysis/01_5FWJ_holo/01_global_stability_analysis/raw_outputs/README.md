@@ -1,10 +1,18 @@
-# Raw Outputs
+# Processed Outputs
 
-This folder contains raw `.xvg` files generated directly from the `01_5FWJ_holo` global stability analysis workflow.
+This directory contains processed output files for the `01_5FWJ_holo` global stability analysis workflow.
 
 ## Current contents
 
-At present, this directory includes raw output files for the three MD replicas from the following analyses:
+- `global_debug_5FWJ_holo.csv`  
+  Debug table containing processed values extracted from replica-level `.xvg` analysis outputs for inspection and quality control.
+
+- `global_summary_5FWJ_holo.csv`  
+  Summary table containing the final global stability statistics for the 5FWJ_holo system.
+
+## Source data
+
+The processed CSV files in this directory were generated from replica-level raw analysis outputs in `.xvg` format, including metrics such as:
 
 - Cα RMSD
 - Cα RMSF
@@ -12,10 +20,9 @@ At present, this directory includes raw output files for the three MD replicas f
 - total SASA
 - per-residue SASA
 
-## File naming
+Replica-specific source files are identified using `rep1`, `rep2`, and `rep3` in the filenames.
 
-Replica-specific outputs are stored using `rep1`, `rep2`, and `rep3` in the filenames.
+## Notes
 
-## Note
-
-These files are stored in their original analysis-output format and were used as the basis for downstream processing, summarization, and plotting.
+- `.xvg` files represent raw or intermediate analysis outputs.
+- `.csv` files represent processed per-system outputs used for downstream comparison, summary generation, and plotting.
