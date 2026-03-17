@@ -13,7 +13,7 @@ gmx make_ndx \
   -f md_repX_60.tpr \
   -n jmjc.ndx \
   -o jmjc.ndx << 'EOF'
-13 & ! a H*
+17 & ! a H*
 name 37 DOL_heavy
 q
 EOF
