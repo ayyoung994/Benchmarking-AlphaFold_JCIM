@@ -9,20 +9,23 @@ This folder stores analyses used to evaluate the structural behavior and local p
 ## Contents
 
 - `scripts/` — scripts used for pocket-focused calculations
-- `raw_outputs/` — raw analysis outputs and intermediate files
-- `README.md` — folder description
+- `processed_outputs/` — replica-level analysis outputs and processed per-system summary tables
+- `README.md` — overview of the pocket analysis workflow and file organization
 
 ## Typical analyses
 
 These analyses may include:
 
-- pocket residue fluctuations
-- pocket distance measurements
-- pocket contact analysis
-- pocket geometry or local structural changes
-- other pocket-centered metrics relevant to ligand binding
+- pocket Cα RMSD
+- pocket radius of gyration
+- pocket-only SASA
+- JmjC-and-pocket SASA
+- other pocket-centered metrics relevant to local structural stability
 
-## Note
+## Notes
 
-This folder contains only the pocket-focused analyses for `03_AlphaFold_PAF`. Other analysis categories are organized separately.
+- This directory contains only the pocket-focused analyses for `03_AlphaFold_PAF`.
+- Replica-level source outputs and processed summary tables are organized in `processed_outputs/`.
+- Files in `processed_outputs/` were used for downstream summary generation, cross-system comparison, and plotting.
+- Other analysis categories are organized separately.
 
