@@ -1,0 +1,4 @@
+System,Metric,"Rep 1 (20–60 ns, mean ± SD)","Rep 2 (20–60 ns, mean ± SD)","Rep 3 (20–60 ns, mean ± SD)",Replica-average of means (mean ± SD)
+PAF,Cα RMSD (nm),0.170 ± 0.018,0.110 ± 0.016,0.122 ± 0.014,0.134 ± 0.032
+PAF,Radius of gyration (Rg) (nm),1.731 ± 0.008,1.696 ± 0.008,1.716 ± 0.008,1.714 ± 0.018
+PAF,SASA (nm$^2$),106.000 ± 1.202,103.015 ± 1.537,104.459 ± 1.333,104.491 ± 1.493
