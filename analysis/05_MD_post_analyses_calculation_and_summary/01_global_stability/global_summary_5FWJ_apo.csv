@@ -1,0 +1,4 @@
+System,Metric,"Rep 1 (20–60 ns, mean ± SD)","Rep 2 (20–60 ns, mean ± SD)","Rep 3 (20–60 ns, mean ± SD)",Replica-average of means (mean ± SD)
+5FWJ_apo,Cα RMSD (nm),0.143 ± 0.016,0.129 ± 0.012,0.203 ± 0.021,0.158 ± 0.040
+5FWJ_apo,Radius of gyration (Rg) (nm),1.653 ± 0.012,1.646 ± 0.009,1.679 ± 0.011,1.660 ± 0.017
+5FWJ_apo,SASA (nm$^2$),96.156 ± 1.498,94.850 ± 1.665,98.241 ± 1.380,96.416 ± 1.710
