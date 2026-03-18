@@ -1,33 +1,54 @@
 # 04_AlphaFold_CAF Analysis
 
-This directory contains the post-simulation analysis workflow for the `04_AlphaFold_CAF` system in the KDM5C benchmarking study.
+## Overview
 
-## System overview
+This directory contains the post-simulation analysis workflows for the **04_AlphaFold_CAF** system in the KDM5C benchmarking study.
 
-`04_AlphaFold_CAF` represents the custom AlphaFold-derived receptor system used for molecular dynamics simulation and subsequent trajectory analysis.
+The `04_AlphaFold_CAF` system represents the **custom AlphaFold-derived receptor model** used for molecular dynamics simulation and subsequent trajectory analysis. This analysis module is organized into multiple subdirectories corresponding to major post-MD evaluation categories.
 
-## Directory structure
+---
 
-- `scripts/`  
-  Analysis scripts used for this system
+## System Description
 
-- `raw_outputs/`  
-  Raw outputs produced directly during trajectory analysis, including intermediate files and software-generated results
+`04_AlphaFold_CAF` corresponds to the receptor model derived from the **custom AlphaFold prediction** used in the benchmarking workflow. It was analyzed across independent MD replicas to assess structural stability, pocket behavior, ligand retention, and interaction features relevant to comparative model evaluation.
 
-- `processed_tables/`  
-  Cleaned summary tables derived from the raw outputs and used for comparison across replicas and receptor models
+---
 
-## Scope of analysis
+## Directory Structure
 
-This folder contains the workflow used to analyze the custom AlphaFold-derived system after MD simulation.  
-Depending on the script set, analyses may include RMSD, RMSF, ligand stability, distance-based measurements, and other post-processing steps relevant to this receptor condition.
+- `00_md_extension/` — files and documentation related to MD trajectory extension or extended simulation handling
+- `01_global_stability_analysis/` — analyses of overall protein structural stability, such as RMSD, RMSF, radius of gyration, SASA, and related global metrics
+- `02_pocket_analysis/` — analyses focused on binding-pocket structural behavior and local stability
+- `03_ligand_behavior/` — analyses of ligand stability, ligand–pocket distance, and ligand–protein interaction persistence
+- `README.md` — documentation for the `04_AlphaFold_CAF` analysis module
 
-## Reproducibility note
+---
 
-This folder is organized separately from the other systems because the post-MD analyses were system-dependent and not fully identical across all receptor models.
+## Scope of Analysis
 
-## Related input files
+This directory contains the organized post-MD analysis workflows for the **04_AlphaFold_CAF** system. Depending on the specific submodule, analyses may include:
 
-The corresponding simulation preparation and input files are stored in:
+- global structural stability assessment,
+- local binding-pocket behavior,
+- ligand retention and interaction analysis,
+- and summary outputs for comparison across replicas and benchmarked receptor models.
+
+Because different analysis categories require different preprocessing steps, atom selections, and output formats, each workflow is documented separately within its corresponding subdirectory.
+
+---
+
+## Organization and Reproducibility
+
+This system is organized as a standalone analysis module so that all post-simulation workflows for the **04_AlphaFold_CAF** condition can be tracked, documented, and reproduced independently from the other receptor models.
+
+The analysis structure is divided by workflow type rather than by file format alone. Each subdirectory contains its own scripts, outputs, and README documentation as needed for reproducibility and downstream interpretation.
+
+---
+
+## Related Input Files
+
+The corresponding simulation setup, preparation files, and MD input materials for this system are stored separately under:
 
 `inputs/04_AlphaFold_CAF/`
+
+These input files are conceptually linked to the present analysis directory but are maintained outside this module to keep simulation setup and post-MD analysis workflows clearly separated.
