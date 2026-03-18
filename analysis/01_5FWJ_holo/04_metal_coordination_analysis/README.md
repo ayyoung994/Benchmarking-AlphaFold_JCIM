@@ -78,12 +78,6 @@ Outputs:
 
 This workflow was applied to **three independent replicas** of the 5FWJ holo system.
 
-Replica-specific outputs are labeled using the corresponding replica tag, for example:
-
-- `EXPB1`
-- `EXPB2`
-- `EXPB3`
-
 ---
 
 ## Notes
