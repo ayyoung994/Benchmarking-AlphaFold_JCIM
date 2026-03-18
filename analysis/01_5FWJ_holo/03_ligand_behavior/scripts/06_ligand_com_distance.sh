@@ -5,7 +5,7 @@ set -euo pipefail
 # Calculate the center-of-mass distance between the ligand heavy atoms
 # and the consensus pocket region using the fitted ligand trajectory.
 
-TPR_FILE="md_rep1.tpr"
+TPR_FILE="md_repX_60.tpr"
 XTC_FILE="md_fit_ligand.xtc"
 INDEX_FILE="jmjc.ndx"
 OUTPUT_FILE="dist_COM_DOL_pocket_holo_repX.xvg"
