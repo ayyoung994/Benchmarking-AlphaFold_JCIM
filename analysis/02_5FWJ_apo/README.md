@@ -10,7 +10,9 @@ The `02_5FWJ_apo` system represents the **crystal-structure-based apo receptor m
 
 ## System Description
 
-`02_5FWJ_apo` corresponds to the apo form of the experimental crystal-structure-based receptor system. It was used as one of the reference models in the benchmarking workflow and analyzed across independent MD replicas to assess structural stability, pocket behavior, ligand retention, and interaction features relevant to comparative model evaluation.
+`02_5FWJ_apo` corresponds to the crystal-structure-based receptor system in the **cofactor-free (metal-free)** state. In this workflow, the term *apo* indicates the absence of the catalytic metal cofactor, while the bound **DOL ligand** is retained for simulation and downstream analysis.
+
+This system was used as one of the reference models in the benchmarking workflow and analyzed across independent MD replicas to assess structural stability, pocket behavior, ligand retention, and interaction features relevant to comparative model evaluation.
 
 ---
 
