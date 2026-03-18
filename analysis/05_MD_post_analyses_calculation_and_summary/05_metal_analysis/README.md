@@ -12,6 +12,8 @@ Unlike the other post-MD summary folders, this analysis was conducted **only for
 
 - `raw_outputs/` — replica-level `.xvg` source output files for Mn²⁺ distance and contact analyses
 - `metal_coordination.png` — final figure summarizing Mn²⁺ coordination behavior in the 5FWJ holo system
+- `metal_contact_replica_summary_angstrom.csv` — replica-level summary table for metal contact or distance-related metrics
+- `metal_contact_across_replicas_summary_angstrom.csv` — across-replica summary table used for integrated comparison and figure generation
 - `README.md` — documentation for this summary module
 
 ---
@@ -20,31 +22,12 @@ Unlike the other post-MD summary folders, this analysis was conducted **only for
 
 The `raw_outputs/` directory contains replica-level source files used for metal coordination analysis, including:
 
-- Mn–Glu516(OE2) distance traces  
-  - `dist_MN_GLU516_OE2_rep1.xvg`
-  - `dist_MN_GLU516_OE2_rep2.xvg`
-  - `dist_MN_GLU516_OE2_rep3.xvg`
+- Mn–Glu516(OE2) distance traces
+- Mn–His514(NE2) distance traces
+- Mn–His602(NE2) distance traces
+- Mn coordination contact traces for the same residue sets across replicates
 
-- Mn–His514(NE2) distance traces  
-  - `dist_MN_HIS514_NE2_rep1.xvg`
-  - `dist_MN_HIS514_NE2_rep2.xvg`
-  - `dist_MN_HIS514_NE2_rep3.xvg`
-
-- Mn–His602(NE2) distance traces  
-  - `dist_MN_HIS602_NE2_rep1.xvg`
-  - `dist_MN_HIS602_NE2_rep2.xvg`
-  - `dist_MN_HIS602_NE2_rep3.xvg`
-
-- Mn coordination contact traces  
-  - `contact_MN_GLU516_OE2_rep1.xvg`
-  - `contact_MN_GLU516_OE2_rep2.xvg`
-  - `contact_MN_GLU516_OE2_rep3.xvg`
-  - `contact_MN_HIS514_NE2_rep1.xvg`
-  - `contact_MN_HIS514_NE2_rep2.xvg`
-  - `contact_MN_HIS514_NE2_rep3.xvg`
-  - `contact_MN_HIS602_NE2_rep1.xvg`
-  - `contact_MN_HIS602_NE2_rep2.xvg`
-  - `contact_MN_HIS602_NE2_rep3.xvg`
+These files are stored as `.xvg` outputs for each replicate and were used to generate the processed summaries and final figure.
 
 ---
 
@@ -55,7 +38,8 @@ This folder was created to provide a clean location for the final metal coordina
 These outputs are intended to support:
 - evaluation of Mn²⁺ coordination behavior across replicas,
 - interpretation of metal-site structural stability,
-- and preparation of summary materials for reporting and manuscript development.
+- preparation of processed summary tables,
+- and generation of summary materials for reporting and manuscript development.
 
 ---
 
@@ -64,4 +48,5 @@ These outputs are intended to support:
 - This analysis was performed **only for the 5FWJ holo system**.
 - The final figure summarizes Mn²⁺ distances to selected coordinating residues using replica-averaged trends shown as mean ± SD (`n = 3`).
 - All replica-level `.xvg` source output files used in this analysis are stored in the `raw_outputs/` directory.
+- The CSV files in this directory contain processed summary outputs derived from the replica-level source data.
 - These outputs are intended for downstream interpretation and reporting.
