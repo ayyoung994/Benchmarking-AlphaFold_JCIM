@@ -1,66 +1,101 @@
-# Ligand Binding Analysis
+# Ligand Binding Analysis — AlphaFold CAF
 
 ## Overview
 
-This workflow prepares the MD trajectory for ligand-centered binding analysis in the CAF system. Trajectory preprocessing was performed to remove periodic boundary artifacts, center the system on the AF JmjC region, and align the trajectory to the JmjC Cα atoms before downstream ligand-behavior analysis.
+This directory contains the shell scripts used for ligand-centered molecular dynamics (MD) trajectory preparation and downstream ligand-behavior analysis for the **04_AlphaFold_CAF** system.
 
-## Trajectory Preparation
+The workflow includes:
+1. creation of a ligand heavy-atom index group,
+2. removal of periodic boundary condition (PBC) artifacts,
+3. trajectory centering and structural fitting, and
+4. downstream analyses of ligand stability and interaction behavior.
 
-### 1. Removal of PBC jumps
+These scripts were prepared for the **04_AlphaFold_CAF** system and can be adapted for individual replicas by modifying the relevant input and output filenames as needed.
 
-Periodic boundary condition (PBC) jumps were removed from the full system trajectory using `gmx trjconv -pbc nojump` to generate a continuous ligand trajectory.
+---
 
-- Input: `md_0_60.xtc`
-- Output: `md_nojump_ligand.xtc`
+## Workflow Summary
+
+### 1. Creation of ligand heavy-atom index
+
+A heavy-atom index group was generated for the ligand (`DOL`) to support heavy-atom-based ligand RMSD analysis.
+
+- Script: `01_make_DOL_heavy_index.sh`
+- Purpose: creates the ligand heavy-atom index group for downstream analysis
+
+### 2. Removal of PBC jumps
+
+Periodic boundary condition (PBC) jumps were removed from the full system trajectory using `gmx trjconv -pbc nojump` to generate a continuous trajectory suitable for ligand analysis.
+
+- Typical input: `md_0_60.xtc`
+- Typical output: `md_nojump_ligand.xtc`
 - Output group: `System`
+- Script: `02_ligand_nojump.sh`
 
-### 2. Centering on AF JmjC and reconstruction of whole molecules
+### 3. Centering on AF JmjC and reconstruction of whole molecules
 
-The no-jump trajectory was centered on `JmjC_all` and written with whole molecules using `gmx trjconv -center -pbc mol -ur compact`. This step placed the AF JmjC region at the center of the simulation box while keeping molecular coordinates compact for visualization and downstream analysis.
+The no-jump trajectory was centered on `JmjC_all` and rewritten using `-center -pbc mol -ur compact`. This step places the AF JmjC region at the center of the simulation box while reconstructing whole molecules and keeping coordinates compact.
 
-- Input: `md_nojump_ligand.xtc`
-- Output: `md_center_ligand.xtc`
+- Typical input: `md_nojump_ligand.xtc`
+- Typical output: `md_center_ligand.xtc`
 - Centering group: `JmjC_all`
 - Output group: `System`
+- Script: `03_ligand_center.sh`
 
-### 3. Alignment to AF JmjC Cα
+### 4. Alignment to AF JmjC Cα
 
-The centered trajectory was least-squares fitted to `JmjC_CA` using `gmx trjconv -fit rot+trans` to provide a rigid reference frame for ligand binding analysis.
+The centered trajectory was least-squares fitted to `JmjC_CA` using `gmx trjconv -fit rot+trans` to provide a stable structural reference frame for downstream ligand-behavior analysis.
 
-- Input: `md_center_ligand.xtc`
-- Output: `md_fit_ligand.xtc`
+- Typical input: `md_center_ligand.xtc`
+- Typical output: `md_fit_ligand.xtc`
 - Fit group: `JmjC_CA`
 - Output group: `System`
+- Script: `04_ligand_fit.sh`
 
-Together, these preprocessing steps generated a cleaned, centered, and structurally aligned trajectory suitable for downstream ligand binding analysis.
+Together, these preprocessing steps generate a cleaned, centered, and structurally aligned trajectory suitable for ligand-centered analysis.
 
-## Ligand Behavior Analysis
+---
 
-### 4. Ligand RMSD
+## Downstream Analyses
 
-Ligand RMSD was calculated for `DOL_heavy` using the fitted trajectory (`md_fit_ligand.xtc`). During `gmx rms`, `JmjC_CA` was used as the least-squares fit group and `DOL_heavy` was used as the RMSD calculation group.
+### 5. Ligand RMSD
 
-This analysis was used to monitor the positional stability of the ligand heavy atoms relative to the AF JmjC reference frame over the simulation.
+Ligand heavy-atom RMSD was calculated to evaluate ligand positional stability during the simulation.
 
-### 5. Ligand–pocket COM distance
+- Script: `05_ligand_rmsd.sh`
+- Purpose: calculates ligand heavy-atom RMSD from the fitted trajectory
 
-The center-of-mass (COM) distance between `DOL_heavy` and `Pocket_JmjC_all` was calculated using `gmx distance` on the fitted trajectory (`md_fit_ligand.xtc`).
+### 6. Ligand center-of-mass distance
 
-This analysis was used to monitor the relative position of the ligand with respect to the consensus pocket over the simulation.
+The distance between the ligand center of mass and the selected pocket reference region was calculated to monitor ligand positional behavior within the binding-site environment.
 
-### 6. Ligand–pocket hydrogen bonds
+- Script: `06_ligand_com_distance.sh`
+- Purpose: calculates ligand center-of-mass (COM) distance
 
-Hydrogen bonds were calculated between `DOL_heavy` and `Pocket_JmjC_all` using `gmx hbond` on the fitted trajectory (`md_fit_ligand.xtc`). During the analysis, `DOL_heavy` was used as the reference selection and `Pocket_JmjC_all` was used as the target selection.
+### 7. Ligand–protein hydrogen bonds
 
-This analysis was used to monitor hydrogen-bonding interactions between the ligand and the consensus pocket region over the simulation.
+Hydrogen bonds formed between the ligand and the protein were quantified across the trajectory.
 
-## Scripts
+- Script: `07_ligand_hbond.sh`
+- Purpose: calculates ligand–protein hydrogen bond counts
 
-The following shell scripts were used in this workflow:
+---
 
-- `ligand_nojump.sh` — removes PBC jumps from the full system trajectory
-- `ligand_center.sh` — centers the trajectory on `JmjC_all` and reconstructs whole molecules
-- `ligand_fit.sh` — aligns the trajectory to `JmjC_CA` for ligand binding analysis
-- `ligand_rmsd.sh` — calculates ligand RMSD for `DOL_heavy` after alignment to `JmjC_CA`
-- `ligand_com_distance.sh` — calculates the COM distance between `DOL_heavy` and `Pocket_JmjC_all`
-- `ligand_hbond.sh` — calculates hydrogen bonds between `DOL_heavy` and `Pocket_JmjC_all`
+## Scripts Included
+
+- `01_make_DOL_heavy_index.sh` — creates the DOL heavy-atom index group
+- `02_ligand_nojump.sh` — removes PBC jumps from the trajectory
+- `03_ligand_center.sh` — centers the trajectory on `JmjC_all` and reconstructs whole molecules
+- `04_ligand_fit.sh` — aligns the trajectory to `JmjC_CA`
+- `05_ligand_rmsd.sh` — calculates ligand heavy-atom RMSD
+- `06_ligand_com_distance.sh` — calculates ligand center-of-mass distance
+- `07_ligand_hbond.sh` — calculates ligand–protein hydrogen bonds
+
+---
+
+## Notes
+
+- This workflow is intended for the **04_AlphaFold_CAF** system.
+- Replica-specific filenames may differ and should be adjusted within each script before execution.
+- The fitted trajectory generated during preprocessing is used as the main input for downstream ligand-behavior analyses.
+- Pocket-based analyses in this workflow use CAF-specific reference groups such as `Pocket_JmjC_all`.
