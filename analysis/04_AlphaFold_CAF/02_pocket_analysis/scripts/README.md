@@ -10,9 +10,9 @@ The scripts are arranged in workflow order.
 
 These scripts use `repX` as a placeholder and should be edited to match the replica-specific filenames before use.
 
-- `01_make_pocket_consensus_template.sh` — template for creating the pocket-related index groups used for downstream pocket analysis
-- `02_center_pocket_trajectory_template.sh` — template for centering the trajectory and making molecules whole for pocket analysis
-- `03_fit_pocket_core_template.sh` — template for fitting the trajectory to the JmjC core before pocket RMSD and related comparisons
+- `01_make_pocket_consensus.sh` — template for creating the pocket-related index groups used for downstream pocket analysis
+- `02_center_pocket_trajectory.sh` — template for centering the trajectory and making molecules whole for pocket analysis
+- `03_fit_pocket_core.sh` — template for fitting the trajectory to the JmjC core before pocket RMSD and related comparisons
 
 ### Analysis scripts
 
