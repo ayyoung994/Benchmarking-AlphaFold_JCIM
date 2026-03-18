@@ -33,5 +33,5 @@ These outputs are intended to support:
 
 - This analysis was performed **only for the 5FWJ holo system**.
 - The comparative figure summarizes Mn²⁺ distances to selected coordinating residues using replica-averaged trends shown as mean ± SD (`n = 3`).
-- The `.xvg` files in this directory contain the replica-level source traces used to generate the final summary figure.
+- All replica-level `.xvg` source output files are stored in the corresponding `raw_outputs/` directory.
 - These outputs are intended for downstream interpretation and reporting.
