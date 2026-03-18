@@ -11,7 +11,7 @@ These files represent key coordinate states generated during MD system setup, al
 ## Contents
 
 - `5FWJ_holo_receptor.pdb` — receptor structure used as the starting protein input
-- `dolasetron.sdf` — ligand structure file used for the bound ligand
+- `dolasetron.mol` — ligand structure file used for the bound ligand
 - `5FWJ_holo_complex.gro` — complex coordinate file
 - `5FWJ_holo_boxed.gro` — boxed system coordinates
 - `5FWJ_holo_solvated.gro` — solvated system coordinates
