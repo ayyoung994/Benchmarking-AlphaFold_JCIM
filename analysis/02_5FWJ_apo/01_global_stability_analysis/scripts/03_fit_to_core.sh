@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
 
-# Template script for fitting the trajectory to the JmjC core C-alpha atoms
+# Template script for fitting the trajectory to the JmjC core Cα atoms
 # for downstream global stability analysis.
 #
 # Replace `md_repX.tpr` with the replica-specific TPR filename.
-# This script assumes that `md_0_60_center.xtc` and `jmjc.ndx` have already been prepared.
+# This script assumes that `md_0_60_center.xtc` and `jmjc.ndx`
+# have already been prepared.
 
 gmx trjconv \
   -s md_repX.tpr \
