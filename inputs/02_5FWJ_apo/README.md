@@ -4,7 +4,7 @@
 
 This directory contains the input files required to reproduce the **02_5FWJ_apo** molecular dynamics system in the KDM5C benchmarking study.
 
-The `02_5FWJ_apo` system corresponds to the crystal-structure-based holo receptor model and includes the simulation parameter files, structural input files, topology files, and replica organization used for MD setup and production.
+The `02_5FWJ_apo` system corresponds to the crystal-structure-based cofactor-free receptor model and includes the simulation parameter files, structural input files, topology files, and replica organization used for MD setup and production.
 
 ---
 
