@@ -9,10 +9,10 @@ The scripts are arranged in workflow order.
 ### Template preprocessing scripts
 These scripts use `repX` as a placeholder and should be edited to match the replica-specific filenames before use.
 
-- `01_make_jmjc_index_template.sh` — template for generating JmjC- and pocket-related index groups
-- `02_center_trajectory_template.sh` — template for centering the trajectory and making molecules whole
-- `03_fit_to_core_template.sh` — template for fitting the trajectory to the JmjC core C-alpha atoms
-- `04_extract_protein_tpr_template.sh` — template for generating a protein-only TPR for downstream analyses
+- `01_make_jmjc_index.sh` — template for generating JmjC- and pocket-related index groups
+- `02_center_trajectory.sh` — template for centering the trajectory and making molecules whole
+- `03_fit_to_core.sh` — template for fitting the trajectory to the JmjC core C-alpha atoms
+- `04_extract_protein_tpr.sh` — template for generating a protein-only TPR for downstream analyses
 
 ### Analysis scripts
 These scripts were used for the final global stability calculations.
