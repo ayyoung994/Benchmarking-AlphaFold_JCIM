@@ -1,0 +1,10 @@
+replica,pair_raw,pair,mean_dist_A,sd_dist_A,min_dist_A,occupancy_%,n_dist_points,n_contact_points,dist_file,contact_file
+rep1,GLU516_OE2,Mn–Glu516 OE2,2.2385,0.3518,1.9308,92.077,4001,4001,dist_MN_GLU516_OE2_rep1.xvg,contact_MN_GLU516_OE2_rep1.xvg
+rep2,GLU516_OE2,Mn–Glu516 OE2,2.2776,0.4572,1.9031,89.3027,4001,4001,dist_MN_GLU516_OE2_rep2.xvg,contact_MN_GLU516_OE2_rep2.xvg
+rep3,GLU516_OE2,Mn–Glu516 OE2,2.0016,0.0407,1.8756,100.0,4001,4001,dist_MN_GLU516_OE2_rep3.xvg,contact_MN_GLU516_OE2_rep3.xvg
+rep1,HIS514_NE2,Mn–His514 NE2,7.4997,0.9196,4.517,0.0,4001,4001,dist_MN_HIS514_NE2_rep1.xvg,contact_MN_HIS514_NE2_rep1.xvg
+rep2,HIS514_NE2,Mn–His514 NE2,6.8172,1.381,4.2913,0.0,4001,4001,dist_MN_HIS514_NE2_rep2.xvg,contact_MN_HIS514_NE2_rep2.xvg
+rep3,HIS514_NE2,Mn–His514 NE2,7.5339,1.3448,4.3196,0.0,4001,4001,dist_MN_HIS514_NE2_rep3.xvg,contact_MN_HIS514_NE2_rep3.xvg
+rep1,HIS602_NE2,Mn–His602 NE2,5.3152,2.5242,2.1156,39.3152,4001,4001,dist_MN_HIS602_NE2_rep1.xvg,contact_MN_HIS602_NE2_rep1.xvg
+rep2,HIS602_NE2,Mn–His602 NE2,3.5315,1.0749,2.0716,41.6396,4001,4001,dist_MN_HIS602_NE2_rep2.xvg,contact_MN_HIS602_NE2_rep2.xvg
+rep3,HIS602_NE2,Mn–His602 NE2,2.2532,0.0635,2.0766,100.0,4001,4001,dist_MN_HIS602_NE2_rep3.xvg,contact_MN_HIS602_NE2_rep3.xvg
