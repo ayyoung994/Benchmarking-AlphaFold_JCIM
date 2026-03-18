@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Replace repX with rep1, rep2, or rep3 before running.
+# Replace repX with rep2 or rep3 before running.
 # Fit the centered trajectory to JmjC_ChainB_CA to define a rigid reference frame.
-# The documented holo trajectory-preparation workflow was reconstructed from rep2.
 
 TPR_FILE="md_repX_60.tpr"
 XTC_FILE="md_center_ligand.xtc"
