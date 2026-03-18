@@ -6,6 +6,6 @@
 gmx sasa -s md_repX_60_protein.tpr \
   -f md_0_60_center.xtc \
   -n jmjc.ndx \
-  -o sasa_total_holo_60_repX.xvg \
-  -or sasa_perres_holo_60_repX.xvg \
+  -o sasa_total_holo_repX.xvg \
+  -or sasa_perres_holo_repX.xvg \
   -tu ns
