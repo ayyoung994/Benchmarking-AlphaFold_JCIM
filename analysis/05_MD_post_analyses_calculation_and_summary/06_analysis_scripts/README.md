@@ -40,7 +40,7 @@ The scripts in this directory were used to generate the summary files and figure
 - `02_pocket_analysis/`
 - `03_ligand_behavior_analysis/`
 - `04_protein_rmsf/`
-- `05_metal_analysis/`
+- `05_metal_coordination_analysis/`
 
 ---
 
