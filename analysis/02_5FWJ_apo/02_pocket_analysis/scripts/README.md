@@ -9,8 +9,8 @@ The scripts are arranged in workflow order.
 ### Preprocessing and setup scripts
 
 - `01_make_pocket_consensus.sh` — creates the pocket-related index groups used for downstream pocket analysis
-- `02_center_pocket_trajectory_template.sh` — template for centering the trajectory and making molecules whole for pocket analysis
-- `03_fit_pocket_core_template.sh` — template for fitting the trajectory to the JmjC core before pocket RMSD and related comparisons
+- `02_center_pocket_trajectory.sh` — template for centering the trajectory and making molecules whole for pocket analysis
+- `03_fit_pocket_core.sh` — template for fitting the trajectory to the JmjC core before pocket RMSD and related comparisons
 
 ### Analysis scripts
 
