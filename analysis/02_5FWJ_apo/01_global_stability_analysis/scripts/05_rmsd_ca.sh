@@ -1,11 +1,25 @@
-# Analysis: RMSD CA
-# System: 02_5FWJ_apo
-# Fit group: 24 (JmjC_ChainB_CA)
-# RMSD group: 24 (JmjC_ChainB_CA)
-# Replace repX with rep1, rep2, or rep3 before running.
+#!/usr/bin/env bash
+set -euo pipefail
 
-gmx rms -s md_repX_protein.tpr \
+# RMSD analysis for JmjC_ChainB_CA
+# System: 02_5FWJ_apo
+#
+# Replace `md_repX_protein.tpr` with the replica-specific TPR file
+# (for example: md_rep1_protein.tpr, md_rep2_protein.tpr, or md_rep3_protein.tpr)
+# before running this script.
+#
+# This script assumes that `md_0_60_fit.xtc` and `jmjc.ndx`
+# have already been prepared.
+
+gmx rms \
+  -s md_repX_protein.tpr \
   -f md_0_60_fit.xtc \
   -n jmjc.ndx \
   -o rmsd_jmjc_CA_apo_repX.xvg \
   -tu ns
+
+# Interactive selections:
+# Least-squares fit group: JmjC_ChainB_CA (24)
+# RMSD calculation group: JmjC_ChainB_CA (24)
+
+echo "Created rmsd_jmjc_CA_apo_repX.xvg"
