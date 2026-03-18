@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Replace repX with rep1, rep2, or rep3 before running.
 # Calculate the center-of-mass distance between the ligand heavy atoms
 # and the consensus pocket region using the fitted ligand trajectory.
 
