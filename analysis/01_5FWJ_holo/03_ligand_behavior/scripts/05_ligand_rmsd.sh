@@ -4,7 +4,7 @@ set -euo pipefail
 # Replace repX with rep2 or rep3 before running.
 # Calculate ligand RMSD for DOL heavy atoms after fitting to JmjC_ChainB_CA.
 
-TPR_FILE="md_rep1.tpr"
+TPR_FILE="md_repX_60.tpr"
 XTC_FILE="md_fit_ligand.xtc"
 INDEX_FILE="jmjc.ndx"
 OUTPUT_FILE="ligand_rmsd_holo_repX.xvg"
