@@ -1,0 +1,4 @@
+pair_raw,pair,mean_dist_A_mean,mean_dist_A_sd,sd_dist_A_mean,min_dist_A_mean,min_dist_A_min,occupancy_mean,occupancy_sd,n_replicas
+GLU516_OE2,Mn–Glu516 OE2,2.1726,0.1493,0.2832,1.9032,1.8756,93.7932,5.5513,3
+HIS514_NE2,Mn–His514 NE2,7.2836,0.4043,1.2151,4.376,4.2913,0.0,0.0,3
+HIS602_NE2,Mn–His602 NE2,3.7,1.5379,1.2209,2.0879,2.0716,60.3183,34.385,3
