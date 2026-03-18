@@ -7,5 +7,5 @@
 gmx rms -s md_repX_60_protein.tpr \
   -f md_0_60_fit_core.xtc \
   -n jmjc.ndx \
-  -o rmsd_jmjc_CA_holo_60_repX.xvg \
+  -o rmsd_jmjc_CA_holo_repX.xvg \
   -tu ns
