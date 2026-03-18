@@ -14,7 +14,7 @@ This replica was generated using the shared system setup and MD protocol, with r
 - Replica: `rep2`
 - Total simulation length: `60 ns`
 - Initial velocities: generated during the NVT stage
-- `gen_seed`: `11111`
+- `gen_seed`: `22222`
 
 ---
 
