@@ -1,24 +1,41 @@
 # Pocket Stability Summary
 
-This directory contains the final cross-system outputs for the pocket stability analysis of the four benchmarked systems:
+## Overview
 
-- 5FWJ_holo
-- 5FWJ_apo
-- PAF
-- CAF
+This directory contains the final cross-system outputs for the pocket stability analysis in the KDM5C benchmarking study.
 
-The files in this folder are summary-level outputs generated from the processed pocket analysis results of all systems over the 20–60 ns analysis window.
+The files in this folder integrate processed results from the individual system-level pocket analysis workflows and provide comparison-ready summary outputs across the four benchmarked systems:
+
+- `01_5FWJ_holo`
+- `02_5FWJ_apo`
+- `03_PAF`
+- `04_CAF`
+
+These outputs were generated from the processed pocket analysis results over the **20–60 ns** analysis window.
+
+---
 
 ## Contents
 
-- `pocket_analysis.png`  
-  Final comparison figure showing pocket stability behavior across the four systems.
+- `pocket_analysis.png` — final comparison figure summarizing pocket stability behavior across the four systems
+- `Table_Pocket_Stability_20-60ns_4systems.csv` — summary table containing pocket stability metrics for all four systems in the 20–60 ns time window
+- `README.md` — documentation for this summary module
 
-- `Table_Pocket_Stability_20-60ns_4systems.csv`  
-  Summary table containing the pocket stability metrics for all four systems in the 20–60 ns time window.
+---
+
+## Purpose
+
+This folder was created to provide a clean location for the final cross-system comparison outputs derived from the pocket analysis workflows.
+
+These outputs are intended to support:
+- comparison of pocket stability across systems,
+- interpretation of local structural behavior within the selected analysis window,
+- and preparation of summary materials for reporting and manuscript development.
+
+---
 
 ## Notes
 
 - This folder contains only the integrated cross-system outputs for pocket analysis.
 - Per-system and per-replica intermediate files are stored in the corresponding system-specific analysis directories.
-- The purpose of this directory is to provide a clean location for the final comparison figure and merged summary table used for interpretation, reporting, and manuscript preparation.
+- The summary table and figure in this directory are intended for downstream comparison and final reporting.
