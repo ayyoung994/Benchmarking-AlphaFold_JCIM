@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Replace repX with rep1, rep2, or rep3 before running.
+# Replace repX with rep2 or rep3 before running.
 # Remove PBC jumps from the full system trajectory.
 # The documented holo trajectory-preparation workflow was reconstructed from rep2.
 
