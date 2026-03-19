@@ -16,12 +16,12 @@ set -euo pipefail
 # - metal_coord_rep${REP}.ndx
 #
 # Output files:
-# - dist_MN_HIS514_NE2_EXPB${REP}.xvg
-# - contact_MN_HIS514_NE2_EXPB${REP}.xvg
-# - dist_MN_HIS602_NE2_EXPB${REP}.xvg
-# - contact_MN_HIS602_NE2_EXPB${REP}.xvg
-# - dist_MN_GLU516_OE2_EXPB${REP}.xvg
-# - contact_MN_GLU516_OE2_EXPB${REP}.xvg
+# - dist_MN_HIS514_NE2_${REP}.xvg
+# - contact_MN_HIS514_NE2_${REP}.xvg
+# - dist_MN_HIS602_NE2_${REP}.xvg
+# - contact_MN_HIS602_NE2_${REP}.xvg
+# - dist_MN_GLU516_OE2_${REP}.xvg
+# - contact_MN_GLU516_OE2_${REP}.xvg
 
 REP=1
 
