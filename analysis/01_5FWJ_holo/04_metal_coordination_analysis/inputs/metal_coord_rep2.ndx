@@ -1,0 +1,12 @@
+[ MN2P_pocket ]
+13814
+[ group_"Pocket_JmjCB"_and_name_ND1_NE2_OD1_OD2_OE1_OE2_OG_OG1_OH_SG_SD_O ]
+9655 9658 9665 9758 9791 9798 9895 9915 9923 9926 9958 9962 9967 9986 9998
+9999 10001 10010 10011 10013 10094 10097 10125 10130 10269 10307 11109 11114 11118 11284
+11309 11314
+[ (group_"JmjC_ChainB")_and_resnr_514_and_resname_HIS_and_name_NE2 ]
+9962
+[ (group_"JmjC_ChainB")_and_resnr_516_and_resname_GLU_and_name_OE2 ]
+9999
+[ (group_"JmjC_ChainB")_and_resnr_602_and_resname_HIS_and_name_NE2 ]
+11114
