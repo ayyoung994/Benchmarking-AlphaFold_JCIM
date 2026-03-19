@@ -41,7 +41,7 @@ The scripts follow this general workflow:
 
 - The template preprocessing scripts in this directory use `repX` as a placeholder. Replace `repX` with the appropriate replica identifier (for example, `rep1`, `rep2`, or `rep3`) and adjust trajectory part filenames as needed before running the commands.
 - The `04_AlphaFold_CAF` system was extended to 60 ns before downstream analysis.
-- `01_prepare_0_60ns_trajectory_template.sh` documents the reconstruction of a continuous 0–60 ns trajectory from split trajectory files after MD extension.
+- `01_prepare_0_60ns_trajectory.sh` documents the reconstruction of a continuous 0–60 ns trajectory from split trajectory files after MD extension.
 
 ## Notes
 
