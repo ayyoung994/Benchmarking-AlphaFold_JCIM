@@ -4,10 +4,10 @@ This directory contains summarized MM/GBSA results for the **01_5FWJ_holo** syst
 
 ## Contents
 
-- **`MMGBSA_per_replica_holo_summary.csv`**  
+- **`MMGBSA_per_replica_5FWJ metal-retained_summary.csv`**  
   Contains MM/GBSA energy terms for each replica separately, enabling evaluation of inter-replica consistency and variability.
 
-- **`MMGBSA_across_replicas_holo_summary.csv`**  
+- **`MMGBSA_across_replicas_5FWJ metal-retained_summary.csv`**  
   Contains aggregated MM/GBSA results across all replicas, including summary statistics used for comparative interpretation and reporting.
 
 ## Purpose
