@@ -2,17 +2,20 @@
 
 ## Overview
 
-This directory contains the post-simulation analysis workflows for the **02_5FWJ_apo** system in the KDM5C benchmarking study.
+This directory contains the post-simulation analysis workflows for the `02_5FWJ_apo` system in the KDM5C receptor-setup comparison study.
 
-The `02_5FWJ_apo` system represents the **crystal-structure-based apo receptor model** used for molecular dynamics simulation and subsequent trajectory analysis. This analysis module is organized into multiple subdirectories corresponding to major post-MD evaluation categories, including global structural stability, pocket behavior, and ligand behavior analysis.
+The folder name `02_5FWJ_apo` is retained as an internal workflow label. In the manuscript, this system is referred to as **5FWJ metal-depleted**. This system represents the experimental crystal-structure-based receptor setup in which crystallographic metal ions were removed during receptor preparation.
 
+This analysis module is organized into multiple subdirectories corresponding to major post-MD evaluation categories, including global structural stability, pocket behavior, and ligand behavior analysis.
 ---
 
 ## System Description
 
-`02_5FWJ_apo` corresponds to the crystal-structure-based receptor system in the **cofactor-free (metal-free)** state. In this workflow, the term *apo* indicates the absence of the catalytic metal cofactor, while the bound **DOL ligand** is retained for simulation and downstream analysis.
+`02_5FWJ_apo` corresponds to the **5FWJ metal-depleted** experimental receptor setup. In this workflow, the internal label `apo` indicates that crystallographic metal ions were removed from the 5FWJ receptor structure; it should not be interpreted as a fully characterized biochemical apo enzyme state.
 
-This system was used as one of the reference models in the benchmarking workflow and analyzed across independent MD replicas to assess structural stability, pocket behavior, ligand retention, and interaction features relevant to comparative model evaluation.
+This system was used as one of the MD receptor setups in the comparative workflow and analyzed across independent MD replicas to assess structural stability, pocket behavior, ligand retention, and interaction features relevant to receptor-setup sensitivity analysis.
+
+In the manuscript, this system should be described as **5FWJ metal-depleted**, not as a cofactor-free or metal-free biochemical state. The term apo is used only as an internal folder and file-naming label for workflow continuity.
 
 ---
 
