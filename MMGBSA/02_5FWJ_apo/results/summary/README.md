@@ -4,10 +4,10 @@ This directory contains summarized MM/GBSA results for the **02_5FWJ_apo** syste
 
 ## Contents
 
-- **`MMGBSA_per_replica_apo_summary.csv`**  
+- **`MMGBSA_per_replica_5FWJ metal-depleted_summary.csv`**  
   Contains MM/GBSA energy terms for each replica separately, enabling evaluation of inter-replica consistency and variability.
 
-- **`MMGBSA_across_replicas_apo_summary.csv`**  
+- **`MMGBSA_across_replicas_5FWJ metal-depleted_summary.csv`**  
   Contains aggregated MM/GBSA results across all replicas, including summary statistics used for comparative interpretation and reporting.
 
 ## Purpose
