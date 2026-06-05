@@ -1,9 +1,9 @@
 System,Metric,"Rep 1 (20–60 ns, mean ± SD)","Rep 2 (20–60 ns, mean ± SD)","Rep 3 (20–60 ns, mean ± SD)",Replica-average of means (mean ± SD)
-5FWJ_holo,Ligand heavy-atom RMSD (nm),2.226 ± 0.704,0.166 ± 0.031,5.340 ± 1.003,2.578 ± 2.605
-5FWJ_holo,Lig–Pocket COM distance (nm),2.331 ± 0.670,0.521 ± 0.055,5.279 ± 0.781,2.710 ± 2.402
-5FWJ_apo,Ligand heavy-atom RMSD (nm),6.983 ± 1.443,4.122 ± 1.557,2.395 ± 0.354,4.500 ± 2.317
-5FWJ_apo,Lig–Pocket COM distance (nm),6.253 ± 0.694,3.029 ± 0.813,2.381 ± 0.149,3.888 ± 2.074
-PAF,Ligand heavy-atom RMSD (nm),19.519 ± 0.037,20.044 ± 0.166,19.648 ± 0.101,19.737 ± 0.273
-PAF,Lig–Pocket COM distance (nm),0.681 ± 0.044,1.330 ± 0.238,0.746 ± 0.120,0.919 ± 0.357
+5FWJ metal-retained,Ligand heavy-atom RMSD (nm),2.226 ± 0.704,0.166 ± 0.031,5.340 ± 1.003,2.578 ± 2.605
+5FWJ metal-retained,Lig–Pocket COM distance (nm),2.331 ± 0.670,0.521 ± 0.055,5.279 ± 0.781,2.710 ± 2.402
+5FWJ metal-depleted,Ligand heavy-atom RMSD (nm),6.983 ± 1.443,4.122 ± 1.557,2.395 ± 0.354,4.500 ± 2.317
+5FWJ metal-depleted,Lig–Pocket COM distance (nm),6.253 ± 0.694,3.029 ± 0.813,2.381 ± 0.149,3.888 ± 2.074
+PAF,Ligand heavy-atom RMSD (nm),0.606 ± 0.040,1.229 ± 0.237,0.693 ± 0.103,0.842 ± 0.337
+PAF,Lig–Pocket COM distance (nm),0.688 ± 0.045,1.333 ± 0.236,0.763 ± 0.117,0.928 ± 0.353
 CAF,Ligand heavy-atom RMSD (nm),0.368 ± 0.039,0.668 ± 0.088,0.916 ± 0.067,0.650 ± 0.274
 CAF,Lig–Pocket COM distance (nm),0.765 ± 0.042,0.899 ± 0.074,1.162 ± 0.088,0.942 ± 0.202
