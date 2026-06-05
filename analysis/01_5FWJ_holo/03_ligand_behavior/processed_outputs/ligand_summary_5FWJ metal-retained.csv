@@ -1,0 +1,3 @@
+System,Metric,"Rep 1 (20–60 ns, mean ± SD)","Rep 2 (20–60 ns, mean ± SD)","Rep 3 (20–60 ns, mean ± SD)",Replica-average of means (mean ± SD)
+5FWJ metal-retained,Ligand heavy-atom RMSD (nm),2.226 ± 0.704,0.166 ± 0.031,5.340 ± 1.003,2.578 ± 2.605
+5FWJ metal-retained,Lig–Pocket COM distance (nm),2.331 ± 0.670,0.521 ± 0.055,5.279 ± 0.781,2.710 ± 2.402
