@@ -1,4 +1,6 @@
 &general
+ startframe=1,
+  endframe=9999999,
   interval=10,
   verbose=2,
 /
