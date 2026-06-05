@@ -6,8 +6,8 @@ This directory contains the final cross-system outputs for the global stability 
 
 The files in this folder integrate processed results from the individual system-level global stability analyses and provide comparison-ready summary outputs across the four benchmarked systems:
 
-- `01_5FWJ_holo`
-- `02_5FWJ_apo`
+- `01_5FWJ_holo` = `5FWJ metal-retained`
+- `02_5FWJ_apo` = `5FWJ metal-depleted`
 - `03_PAF`
 - `04_CAF`
 
