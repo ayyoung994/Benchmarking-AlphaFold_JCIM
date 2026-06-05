@@ -7,7 +7,7 @@ gmx trjconv \
   -s md_rep2_60.tpr \
   -f md_rep2_60.xtc \
   -o md_20_60_center.xtc \
-  -tu ns
+  -tu ns \
   -b 20 \
   -e 60 \
   -pbc mol \
