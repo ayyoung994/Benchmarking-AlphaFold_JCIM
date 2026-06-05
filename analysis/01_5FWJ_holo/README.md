@@ -2,15 +2,17 @@
 
 ## Overview
 
-This directory contains the post-simulation analysis workflows for the **01_5FWJ_holo** system in the KDM5C benchmarking study.
+This directory contains the post-simulation analysis workflows for the 01_5FWJ_holo system in the KDM5C receptor-setup comparison study.
 
-The `01_5FWJ_holo` system represents the **crystal-structure-based holo receptor model** used for molecular dynamics simulation and subsequent trajectory analysis. This analysis module is organized into multiple subdirectories corresponding to major post-MD evaluation categories, including global structural stability, pocket behavior, ligand behavior, and metal coordination analysis.
+The folder name `01_5FWJ_holo` is retained as an internal workflow label. In the manuscript, this system is referred to as **5FWJ metal-retained**. This system represents the experimental crystal-structure-based receptor setup in which crystallographic metal ions were retained during protein preparation for molecular dynamics simulation and subsequent trajectory analysis.
 
----
+This analysis module is organized into multiple subdirectories corresponding to major post-MD evaluation categories, including global structural stability, pocket behavior, ligand behavior, and metal-coordination analysis.
 
 ## System Description
 
-`01_5FWJ_holo` corresponds to the holo form of the experimental crystal-structure-based receptor system. It was used as one of the reference models in the benchmarking workflow and analyzed across independent MD replicas to assess structural stability, ligand retention, binding-site behavior, and coordination features relevant to comparative model evaluation.
+`01_5FWJ_holo` corresponds to the 5FWJ metal-retained experimental receptor setup. It was used as one of the MD receptor setups in the comparative workflow and analyzed across independent MD replicas to assess structural stability, ligand retention, binding-site behavior, and metal-associated distance changes relevant to receptor-setup sensitivity analysis.
+
+In the manuscript, this system should be described as 5FWJ metal-retained, not as a biochemical holo enzyme state. The term holo is used only as an internal folder and file-naming label for workflow continuity.
 
 ---
 
