@@ -4,8 +4,8 @@ This directory contains post-MD analysis workflows for the KDM5C benchmarking sy
 
 ## Systems included
 
-- `01_5FWJ_holo` — crystal-structure-based holo system
-- `02_5FWJ_apo` — crystal-structure-based apo system
+- `01_5FWJ_holo` — internal workflow label corresponding to **5FWJ metal-retained**
+- `02_5FWJ_apo` — internal workflow label corresponding to **5FWJ metal-depleted**
 - `03_AlphaFold_PAF` — public AlphaFold-derived model
 - `04_AlphaFold_CAF` — custom AlphaFold-derived model
 - `05_MD_post_analyses_calculation_and_summary` — cross-system summary tables and final comparison figures
