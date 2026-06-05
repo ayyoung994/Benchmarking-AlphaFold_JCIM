@@ -5,9 +5,9 @@ set -euo pipefail
 # Fit the centered trajectory to AF JmjC C-alpha atoms.
 
 TPR_FILE="md_repX_60.tpr"
-XTC_FILE="md_center_ligand.xtc"
+XTC_FILE="md_center_ligand_PAF.xtc"
 INDEX_FILE="jmjc.ndx"
-OUTPUT_FILE="md_fit_ligand.xtc"
+OUTPUT_FILE="md_fit_ligand_PAF.xtc"
 
 printf "22\n0\n" | gmx trjconv \
   -s "$TPR_FILE" \
