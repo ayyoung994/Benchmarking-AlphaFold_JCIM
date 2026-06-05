@@ -20,7 +20,7 @@ Replica-specific source files are identified using `rep1`, `rep2`, and `rep3` in
 
 ### Processed summary output
 
-- `ligand_summary_5FWJ_apo.csv`  
+- `ligand_summary_5FWJ metal-depleted.csv`  
   Summary table containing the 20–60 ns ligand behavior statistics for the 5FWJ_apo system. The current table includes:
   - ligand heavy-atom RMSD
   - ligand–pocket center-of-mass distance
