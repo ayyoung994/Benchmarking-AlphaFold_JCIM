@@ -12,7 +12,7 @@ gmx make_ndx -f md_rep3_60.tpr -n jmjc.ndx -o ../input/jmjc_mmpbsa.ndx
 # q
 
 # Step 2: preprocess trajectory
-gmx trjconv -s md_rep3_60.tpr -f md_rep3_60.xtc -o md_0_60_center_2.xtc -b 0 -e 60000 -pbc mol -center -ur compact
+gmx trjconv -s md_rep3_60.tpr -f md_rep3_60.xtc -o md_20_60_center.xtc -tu ns -b 20 -e 60 -pbc mol -center -ur compact
 
 # Interactive selections used inside trjconv:
 # Centering group: 1 (Protein)
@@ -27,7 +27,7 @@ gmx trjconv -s md_rep3_60.tpr -f md_rep3_60.xtc -o md_0_60_center_2.xtc -b 0 -e 
 gmx_MMPBSA -O \
   -i ../input/mmpbsa.in \
   -cs md_rep3_60.tpr \
-  -ct md_0_60_center_2.xtc \
+  -ct md_20_60_center.xtc \
   -cp topol.top \
   -ci ../input/jmjc_mmpbsa.ndx \
   -cg 36 17 \
