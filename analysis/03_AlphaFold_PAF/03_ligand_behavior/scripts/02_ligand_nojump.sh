@@ -6,7 +6,7 @@ set -euo pipefail
 
 TPR_FILE="md_repX_60.tpr"
 XTC_FILE="md_0_60.xtc"
-OUTPUT_FILE="md_nojump_ligand.xtc"
+OUTPUT_FILE="md_nojump_ligand_PAF.xtc"
 
 printf "0\n" | gmx trjconv \
   -s "$TPR_FILE" \
