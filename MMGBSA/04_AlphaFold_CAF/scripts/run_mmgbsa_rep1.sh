@@ -6,9 +6,10 @@ set -e
 gmx trjconv \
   -s md_rep1_60.tpr \
   -f md_rep1_60.xtc \
-  -o md_0_60_center_2.xtc \
-  -b 0 \
-  -e 60000 \
+  -o md_20_60_center.xtc \
+  -tu ns
+  -b 20 \
+  -e 60 \
   -pbc mol \
   -center \
   -ur compact
