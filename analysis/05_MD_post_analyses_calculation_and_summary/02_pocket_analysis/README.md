@@ -18,7 +18,7 @@ These outputs were generated from the processed pocket analysis results over the
 ## Contents
 
 - `pocket_analysis.png` — final comparison figure summarizing pocket stability behavior across the four systems
-- `Table_Pocket_Stability_20-60ns_4systems.csv` — summary table containing pocket stability metrics for all four systems in the 20–60 ns time window
+- `pocket_summary_all_systems.csv` — summary table containing pocket stability metrics for all four systems in the 20–60 ns time window
 - `README.md` — documentation for this summary module
 
 ---
