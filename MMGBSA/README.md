@@ -4,8 +4,8 @@ This directory contains the MM/GBSA workflows, input files, execution scripts, a
 
 ## Systems included
 
-- `01_5FWJ_holo` — holo system based on the experimental crystal structure
-- `02_5FWJ_apo` — apo system based on the experimental crystal structure
+- `01_5FWJ_holo` — internal workflow label corresponding to **5FWJ metal-retained**
+- `02_5FWJ_apo` — internal workflow label corresponding to **5FWJ metal-depleted**
 - `03_AlphaFold_PAF` — system based on the public AlphaFold model
 - `04_AlphaFold_CAF` — system based on the custom AlphaFold model
 - `05_MMGBSA_Calculation_and_Summary` — notebooks and combined summary tables for cross-system MM/GBSA result processing
