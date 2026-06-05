@@ -1,0 +1,4 @@
+﻿Replica,file,VDWAALS (avg),VDWAALS (SD within),EEL (avg),EEL (SD within),EGB (avg),EGB (SD within),ESURF (avg),ESURF (SD within),GGAS (avg),GGAS (SD within),GSOLV (avg),GSOLV (SD within),TOTAL (avg),TOTAL (SD within),Matched TOTAL line
+Rep 1,FINAL_RESULTS_MMGBSA_holo_rep1.dat,-5.01,7.38,-1.64,3.82,5.21,7.53,-0.67,1.01,-6.66,10.23,4.54,6.64,-2.12,4.21,ΔTOTAL                   -2.12          1.70       4.21         0.08       0.21
+Rep 2,FINAL_RESULTS_MMGBSA_holo_rep2.dat,-21.93,2.39,-7.83,3.32,30.08,3.58,-2.85,0.32,-29.76,4.57,27.24,3.47,-2.53,3.74,ΔTOTAL                   -2.53          1.57       3.74         0.08       0.19
+Rep 3,FINAL_RESULTS_MMGBSA_holo_rep3.dat,-0.0,0.01,-0.14,1.4,0.31,1.6,-0.0,0.0,-0.14,1.41,0.31,1.6,0.16,0.5,ΔTOTAL                    0.16          1.87       0.50         0.09       0.02
