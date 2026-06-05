@@ -1,0 +1,13 @@
+﻿System,Replica,file,VDWAALS (avg),VDWAALS (SD within),EEL (avg),EEL (SD within),EGB (avg),EGB (SD within),ESURF (avg),ESURF (SD within),GGAS (avg),GGAS (SD within),GSOLV (avg),GSOLV (SD within),TOTAL (avg),TOTAL (SD within),Matched TOTAL line
+holo,Rep 1,FINAL_RESULTS_MMGBSA_holo_rep1.dat,-5.01,7.38,-1.64,3.82,5.21,7.53,-0.67,1.01,-6.66,10.23,4.54,6.64,-2.12,4.21,ΔTOTAL                   -2.12          1.70       4.21         0.08       0.21
+holo,Rep 2,FINAL_RESULTS_MMGBSA_holo_rep2.dat,-21.93,2.39,-7.83,3.32,30.08,3.58,-2.85,0.32,-29.76,4.57,27.24,3.47,-2.53,3.74,ΔTOTAL                   -2.53          1.57       3.74         0.08       0.19
+holo,Rep 3,FINAL_RESULTS_MMGBSA_holo_rep3.dat,-0.0,0.01,-0.14,1.4,0.31,1.6,-0.0,0.0,-0.14,1.41,0.31,1.6,0.16,0.5,ΔTOTAL                    0.16          1.87       0.50         0.09       0.02
+apo,Rep 1,FINAL_RESULTS_MMGBSA_apo_rep1.dat,-0.0,0.0,0.0,0.11,-0.0,0.11,0.0,0.0,0.0,0.11,-0.0,0.11,-0.0,0.0,ΔTOTAL                   -0.00          2.00       0.00         0.10       0.00
+apo,Rep 2,FINAL_RESULTS_MMGBSA_apo_rep2.dat,-9.55,8.16,-1.26,2.01,5.39,4.48,-1.17,0.97,-10.82,9.29,4.22,3.58,-6.6,6.0,ΔTOTAL                   -6.60          1.42       6.00         0.07       0.30
+apo,Rep 3,FINAL_RESULTS_MMGBSA_apo_rep3.dat,-6.65,5.7,-0.7,1.6,4.42,3.55,-0.93,0.83,-7.36,6.54,3.49,2.83,-3.87,4.03,ΔTOTAL                   -3.87          1.51       4.03         0.08       0.20
+PAF,Rep 1,FINAL_RESULTS_MMGBSA_PAF_rep1.dat,-20.74,2.0,-17.93,3.11,32.14,3.7,-2.6,0.26,-38.66,3.54,29.54,3.54,-9.12,1.7,ΔTOTAL                   -9.12          1.42       1.70         0.07       0.09
+PAF,Rep 2,FINAL_RESULTS_MMGBSA_PAF_rep2.dat,-8.88,2.32,-5.81,3.64,13.68,4.21,-1.12,0.27,-14.69,4.59,12.56,4.1,-2.14,1.34,ΔTOTAL                   -2.14          1.70       1.34         0.08       0.07
+PAF,Rep 3,FINAL_RESULTS_MMGBSA_PAF_rep3.dat,-15.75,5.28,-4.06,4.05,20.02,7.47,-2.22,0.86,-19.81,7.91,17.8,6.71,-2.01,2.79,ΔTOTAL                   -2.01          1.60       2.79         0.08       0.14
+CAF,Rep 1,FINAL_RESULTS_MMGBSA_CAF_rep1.dat,-17.61,1.69,-8.7,2.08,21.85,1.91,-2.62,0.18,-26.31,2.32,19.23,1.84,-7.08,1.44,ΔTOTAL                   -7.08          1.95       1.44         0.10       0.07
+CAF,Rep 2,FINAL_RESULTS_MMGBSA_CAF_rep2.dat,-9.92,2.79,-4.25,3.35,13.13,3.84,-1.45,0.47,-14.16,4.89,11.69,3.45,-2.48,1.85,ΔTOTAL                   -2.48          1.78       1.85         0.09       0.09
+CAF,Rep 3,FINAL_RESULTS_MMGBSA_CAF_rep3.dat,-8.37,3.56,2.0,2.38,4.75,3.18,-1.07,0.52,-6.37,4.74,3.68,2.84,-2.7,2.44,ΔTOTAL                   -2.70          1.55       2.44         0.08       0.12
