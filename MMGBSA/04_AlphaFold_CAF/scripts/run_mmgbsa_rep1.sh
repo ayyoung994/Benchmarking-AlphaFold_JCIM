@@ -24,7 +24,7 @@ gmx trjconv \
 gmx_MMPBSA -O \
   -i mmpbsa.in \
   -cs md_rep1_60.tpr \
-  -ct md_0_60_center_2.xtc \
+  -ct md_20_60_center.xtc \
   -cp topol.top \
   -ci jmjc.ndx \
   -cg 21 13 \
