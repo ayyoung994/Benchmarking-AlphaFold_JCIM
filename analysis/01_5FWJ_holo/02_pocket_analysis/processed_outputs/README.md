@@ -21,7 +21,7 @@ Replica-specific source files are identified using `rep1`, `rep2`, and `rep3` in
 
 ### Processed summary output
 
-- `Table_Pocket_Stability_20-60ns_5FWJ_holo.csv`  
+- `Table_Pocket_Stability_20-60ns_5FWJ metal-retained.csv`  
   Summary table containing the pocket stability metrics for the 5FWJ_holo system over the 20–60 ns analysis window.
 
 ## Notes
