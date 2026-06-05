@@ -31,7 +31,7 @@ In the manuscript, this system should be described as **5FWJ metal-depleted**, n
 
 ## Scope of Analysis
 
-This directory contains the organized post-MD analysis workflows for the **5FWJ apo** system. Depending on the specific submodule, analyses may include:
+This directory contains the organized post-MD analysis workflows for the **5FWJ metal-depleted** system. Depending on the specific submodule, analyses may include:
 
 - global structural stability assessment,
 - local binding-pocket behavior,
