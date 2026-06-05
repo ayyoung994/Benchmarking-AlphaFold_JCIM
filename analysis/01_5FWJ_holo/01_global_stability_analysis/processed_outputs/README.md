@@ -4,10 +4,10 @@ This directory contains processed output files for the `01_5FWJ_holo` global sta
 
 ## Current contents
 
-- `global_debug_5FWJ_holo.csv`  
+- `global_debug_5FWJ metal-retained.csv`  
   Debug table containing processed values extracted from replica-level `.xvg` analysis outputs for inspection and quality control.
 
-- `global_summary_5FWJ_holo.csv`  
+- `global_summary_5FWJ metal-retained.csv`  
   Summary table containing the final global stability statistics for the 5FWJ_holo system.
 
 ## Source data
