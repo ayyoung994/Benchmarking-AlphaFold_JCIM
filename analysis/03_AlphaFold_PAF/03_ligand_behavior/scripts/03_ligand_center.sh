@@ -5,7 +5,7 @@ set -euo pipefail
 # Center the trajectory on AF JmjC and reconstruct whole molecules.
 
 TPR_FILE="md_repX_60.tpr"
-XTC_FILE="md_nojump_ligand.xtc"
+XTC_FILE="md_nojump_ligand_PAF.xtc"
 INDEX_FILE="jmjc.ndx"
 OUTPUT_FILE="md_center_ligand_PAF.xtc"
 
