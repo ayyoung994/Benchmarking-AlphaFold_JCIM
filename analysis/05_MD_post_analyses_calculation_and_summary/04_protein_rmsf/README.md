@@ -6,8 +6,8 @@ This directory contains the final cross-system outputs for the protein RMSF anal
 
 The files in this folder provide comparison-ready visualization of residue-level flexibility across the benchmarked systems:
 
-- `01_5FWJ_holo`
-- `02_5FWJ_apo`
+- `01_5FWJ_holo`  = `5FWJ metal-retained`
+- `02_5FWJ_apo` = `5FWJ metal-depleted`
 - `03_PAF`
 - `04_CAF`
 
@@ -15,7 +15,7 @@ The files in this folder provide comparison-ready visualization of residue-level
 
 ## Contents
 
-- `protein_RMSF_all_systems.png` — final comparative figure summarizing protein RMSF profiles across the analyzed systems
+- `protein_RMSF.png` — final comparative figure summarizing protein RMSF profiles across the analyzed systems
 - `README.md` — documentation for this summary module
 
 ---
