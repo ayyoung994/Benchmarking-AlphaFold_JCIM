@@ -2,6 +2,8 @@
 
 This directory contains shell scripts used for preprocessing and global stability analysis of the `03_AlphaFold_PAF` system.
 
+The folder label `03_AlphaFold_PAF` corresponds to the **public AlphaFold-derived KDM5C receptor setup** used in the manuscript. This receptor setup is referred to as **PAF**.
+
 ## Script organization
 
 The scripts are arranged in workflow order.
@@ -32,14 +34,14 @@ The scripts follow this general workflow:
 3. center and compact the trajectory
 4. fit the trajectory to the JmjC core
 5. extract a protein-only TPR
-6. calculate RMSD
-7. calculate RMSF
+6. calculate Cα RMSD
+7. calculate Cα RMSF
 8. calculate radius of gyration
 9. calculate SASA
 
 ## Replica note
 
-- The template preprocessing scripts in this directory use `repX` as a placeholder. Replace `repX` with the appropriate replica identifier (for example, `rep1`, `rep2`, or `rep3`) and adjust trajectory part filenames as needed before running the commands.
+- The template preprocessing scripts in this directory use `repX` as a placeholder. Replace `repX` with the appropriate replica identifier, such as `rep1`, `rep2`, or `rep3`, and adjust trajectory part filenames as needed before running the commands.
 - The `03_AlphaFold_PAF` system was extended to 60 ns before downstream analysis.
 - `01_prepare_0_60ns_trajectory_template.sh` documents the reconstruction of a continuous 0–60 ns trajectory from split trajectory files after MD extension.
 
@@ -48,3 +50,4 @@ The scripts follow this general workflow:
 - The template scripts are provided to document the common preprocessing workflow used before global stability analysis.
 - Unlike the crystal-structure-based systems, the AlphaFold-based system used JmjC index groups defined directly from the residue range corresponding to the JmjC region, without chain-specific subdivision.
 - Interactive GROMACS selections are recorded as comments inside each script.
+- In the manuscript, this system is described as the **PAF** receptor setup.
