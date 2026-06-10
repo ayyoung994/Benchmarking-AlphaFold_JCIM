@@ -2,6 +2,8 @@
 
 This directory contains replica-specific shell scripts and execution log files used to extend the production MD runs for the `03_AlphaFold_PAF` system from 20 ns to 60 ns before downstream analysis.
 
+The folder label `03_AlphaFold_PAF` corresponds to the **public AlphaFold-derived KDM5C receptor setup** used in the manuscript. This receptor setup is referred to as **PAF**.
+
 ## Directory contents
 
 - `scripts/` — shell scripts used to continue the production MD runs for each replica
@@ -29,3 +31,4 @@ These files document the checkpoint-based continuation workflow used to extend t
 - The shell scripts preserve the exact command-line workflow used for each replica.
 - The log files provide execution records for the extended MD runs.
 - Part numbers in the log filenames reflect the original continuation history and may differ among replicas.
+- In the manuscript, this system is described as the **PAF** receptor setup.
