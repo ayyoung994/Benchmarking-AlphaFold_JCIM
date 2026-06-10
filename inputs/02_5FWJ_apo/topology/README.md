@@ -2,9 +2,11 @@
 
 ## Overview
 
-This directory contains the topology and parameter files required to reproduce the **02_5FWJ_apo** molecular dynamics system.
+This directory contains the topology and parameter files required to reproduce the `02_5FWJ_apo` molecular dynamics system.
 
-It includes the main topology file, ligand parameter files, protein topology includes, position restraint files, and the local CHARMM36 force-field directory used during MD setup and simulation.
+The folder label `02_5FWJ_apo` is retained for workflow continuity. In the manuscript, this system corresponds to the **5FWJ metal-depleted** receptor setup.
+
+This directory includes the main topology file, ligand parameter files, protein topology include files, position restraint files, and the local CHARMM36 force-field directory used during MD setup and simulation.
 
 ---
 
@@ -25,7 +27,7 @@ It includes the main topology file, ligand parameter files, protein topology inc
 
 ## Purpose
 
-This directory was created to provide the topology, parameter, and restraint files required to build and simulate the **02_5FWJ_apo** MD system in a reproducible manner.
+This directory was created to provide the topology, parameter, and restraint files required to build and simulate the **5FWJ metal-depleted** MD system in a reproducible manner.
 
 ---
 
@@ -33,4 +35,6 @@ This directory was created to provide the topology, parameter, and restraint fil
 
 - The files in this directory are used together with the structure files in `../structures/` and the simulation parameter files in `../mdp/`.
 - Position restraint files are included for system preparation and equilibration stages where applicable.
-- Unlike the holo system, this apo topology folder does not include metal-related restraint files.
+- The internal label `apo` is retained in file names for workflow continuity.
+- In the manuscript, this system is described as **5FWJ metal-depleted**, not as a fully characterized biochemical apo enzyme state.
+- Unlike the **5FWJ metal-retained** setup, this topology folder does not include crystallographic metal-ion restraint files.
