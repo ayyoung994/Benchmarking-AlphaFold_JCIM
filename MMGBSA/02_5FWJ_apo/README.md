@@ -1,10 +1,12 @@
 # 02_5FWJ_apo MM/GBSA
 
-This directory contains MM/GBSA input files, execution scripts, and result files for the `02_5FWJ_apo` system in the KDM5C benchmarking study.
+This directory contains MM/GBSA input files, execution scripts, and result files for the `02_5FWJ_apo` system used in the KDM5C receptor-setup sensitivity study.
 
 ## System description
 
-`02_5FWJ_apo` is the crystal-structure-based apo system derived from the experimental 5FWJ model. In the MM/GBSA receptor definition, metal and cofactor groups were not included.
+`02_5FWJ_apo` is an internal workflow label corresponding to the **5FWJ metal-depleted** receptor setup in the manuscript. This system was derived from the experimental 5FWJ structure, with crystallographic metal ions removed during receptor preparation.
+
+The term `apo` is retained in folder and file names for workflow continuity. In the manuscript, this system should be described as 5FWJ metal-depleted, not as a fully characterized biochemical apo enzyme state.
 
 ## Folder organization
 
@@ -27,7 +29,7 @@ The same MM/GBSA input settings and receptor/ligand group definitions were used 
 
 Typical files associated with this system include:
 
-- `mmpbsa.in` — MM/GBSA parameter file
+- `mmpbsa.in` — MM/GBSA endpoint-energy parameter file
 - `jmjc_mmpbsa.ndx` — index file used to define receptor and ligand groups
 - `run_mmgbsa_rep*.sh` — replica-specific execution scripts
 - `gmx_MMGBSA_apo_rep*.log` — execution log for each MM/GBSA run
@@ -36,4 +38,7 @@ Typical files associated with this system include:
 
 ## Notes
 
-The receptor group for this apo system was defined from the JmjC Chain B region without including metal or cofactor groups. Although this system is labeled `02_5FWJ_apo`, the MM/GBSA workflow used `DOL` as the ligand group for the corresponding replica setup.
+- The receptor group for this system was defined from the JmjC chain B region without including crystallographic metal-ion groups.
+- The ligand group was `DOL`.
+- The internal label `apo` is retained in file and folder names for workflow continuity. In the manuscript, this system is described as **5FWJ metal-depleted**.
+- MM/GBSA values are provided as protocol-dependent endpoint-energy descriptors and should not be interpreted as absolute binding affinities or evidence of ligand potency.
