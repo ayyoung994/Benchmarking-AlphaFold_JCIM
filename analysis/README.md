@@ -32,6 +32,6 @@ Within each analysis module, the following subfolders or files may be included:
 
 - Not all analysis modules or output file types are necessarily present for every receptor setup.
 - Ligand-focused analyses were performed for systems containing the representative ligand `DOL`.
-- Cross-system comparison tables and final summary figures are organized separately under `05_MD_post_analysis_calculation_and_summary/`.
+- Cross-system comparison tables and final summary figures are organized separately under `05_MD_post_analyses_calculation_and_summary/`.
 - Internal labels such as `holo` and `apo` are retained for workflow continuity and should be mapped to the manuscript terms **5FWJ metal-retained** and **5FWJ metal-depleted**.
 - The outputs in this directory are intended to support reproducibility, traceability, downstream comparison, figure preparation, and manuscript reporting.
