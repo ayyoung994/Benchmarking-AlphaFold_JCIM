@@ -2,9 +2,11 @@
 
 ## Overview
 
-This directory contains the topology and parameter files required to reproduce the **03_AlphaFold_PAF** molecular dynamics system.
+This directory contains the topology and parameter files required to reproduce the `03_AlphaFold_PAF` molecular dynamics system.
 
-It includes the main topology file, ligand parameter files, ligand restraint files, and the local CHARMM36 force-field directory used during MD setup and simulation.
+The folder label `03_AlphaFold_PAF` corresponds to the **public AlphaFold-derived KDM5C receptor setup** used in the manuscript. This receptor setup is referred to as **PAF**.
+
+This directory includes the main topology file, ligand parameter files, ligand restraint files, and the local CHARMM36 force-field directory used during MD setup and simulation.
 
 ---
 
@@ -21,12 +23,13 @@ It includes the main topology file, ligand parameter files, ligand restraint fil
 
 ## Purpose
 
-This directory was created to provide the topology, parameter, and restraint files required to build and simulate the **03_AlphaFold_PAF** MD system in a reproducible manner.
+This directory was created to provide the topology, parameter, and restraint files required to build and simulate the **PAF** MD system in a reproducible manner.
 
 ---
 
 ## Notes
 
 - The files in this directory are used together with the structure files in `../structures/` and the simulation parameter files in `../mdp/`.
-- This topology folder includes ligand-specific topology and restraint files for the bound DOL ligand.
+- This topology folder includes ligand-specific topology and restraint files for the `DOL` ligand used in the MD system.
 - Compared with the crystal-structure-based systems, this folder contains a simplified topology organization specific to the PAF model setup.
+- In the manuscript, this system is described as the **PAF** receptor setup.
