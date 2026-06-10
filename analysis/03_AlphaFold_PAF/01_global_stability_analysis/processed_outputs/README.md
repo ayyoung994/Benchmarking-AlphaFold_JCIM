@@ -1,6 +1,8 @@
 # Processed Outputs
 
-This directory contains processed output files for the `03_AlphaFold_PAF` global stability analysis workflow. 
+This directory contains processed output files for the `03_AlphaFold_PAF` global stability analysis workflow.
+
+The folder label `03_AlphaFold_PAF` corresponds to the **public AlphaFold-derived KDM5C receptor setup** used in the manuscript. This receptor setup is referred to as **PAF**.
 
 ## Current contents
 
@@ -8,7 +10,7 @@ This directory contains processed output files for the `03_AlphaFold_PAF` global
   Debug table containing processed values extracted from replica-level `.xvg` analysis outputs for inspection and quality control.
 
 - `global_summary_PAF.csv`  
-  Summary table containing the final global stability statistics for the AlphaFold_PAF system.
+  Summary table containing the final global stability statistics for the **PAF** receptor setup.
 
 ## Source data
 
@@ -24,5 +26,6 @@ Replica-specific source files are identified using `rep1`, `rep2`, and `rep3` in
 
 ## Notes
 
-- `.xvg` files represent raw or intermediate analysis outputs.
+- `.xvg` files represent raw or intermediate GROMACS analysis outputs.
 - `.csv` files represent processed per-system outputs used for downstream comparison, summary generation, and plotting.
+- In the manuscript, this system is described as the **PAF** receptor setup.
