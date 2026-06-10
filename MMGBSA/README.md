@@ -1,18 +1,18 @@
 # MM/GBSA Directory
 
-This directory contains the MM/GBSA workflows, input files, execution scripts, and result files for the four KDM5C benchmarking systems evaluated in this study.
+This directory contains the MM/GBSA endpoint-energy workflows, input files, execution scripts, and result files for the four KDM5C receptor setups evaluated in this study.
 
 ## Systems included
 
 - `01_5FWJ_holo` — internal workflow label corresponding to **5FWJ metal-retained**
 - `02_5FWJ_apo` — internal workflow label corresponding to **5FWJ metal-depleted**
-- `03_AlphaFold_PAF` — system based on the public AlphaFold model
-- `04_AlphaFold_CAF` — system based on the custom AlphaFold model
+- `03_AlphaFold_PAF` — receptor setup based on the public AlphaFold-derived model (**PAF**)
+- `04_AlphaFold_CAF` — receptor setup based on the custom AlphaFold-derived model (**CAF**)
 - `05_MMGBSA_Calculation_and_Summary` — notebooks and combined summary tables for cross-system MM/GBSA result processing
 
 ## Directory organization
 
-This directory is organized by system. Each system-specific folder contains the files used to prepare, run, and summarize MM/GBSA calculations for that system.
+This directory is organized by receptor setup. Each system-specific folder contains the files used to prepare, run, and summarize MM/GBSA calculations for that receptor–ligand complex.
 
 Each system folder may include:
 
@@ -24,32 +24,33 @@ Each system folder may include:
 Within the `results/` directory, files may be organized as:
 
 - `rep1/`, `rep2/`, `rep3/` — output files generated from individual replica calculations
-- `summary/` — processed summary tables used for comparison across replicas
+- `summary/` — processed summary tables used for comparison across replicas and receptor setups
 
 ## Main files
 
-Representative MM/GBSA-related files in each system directory may include:
+Representative MM/GBSA-related files in each receptor-setup directory may include:
 
-- `mmpbsa.in` — input parameter file for MM/GBSA calculations
+- `mmpbsa.in` — input parameter file for MM/GBSA endpoint-energy calculations
 - `*.ndx` — index files defining receptor and ligand groups
 - `run_mmgbsa*.sh` — shell scripts used to execute MM/GBSA calculations
 - `gmx_MMGBSA*.log` — run logs containing command-line details, selected groups, and execution status
 - `FINAL_RESULTS_MMGBSA*.dat` — final MM/GBSA energy summary files
 - `FINAL_RESULTS_PER_FRAME*.dat` — per-frame MM/GBSA energy output files
-
+  
 ## Cross-system summary folder
 
 The `05_MMGBSA_Calculation_and_Summary` folder contains:
 
 - Jupyter notebooks used to extract, process, and summarize MM/GBSA results
-- combined per-replica summary tables across all systems
-- combined across-replica summary tables across all systems
+- combined per-replica summary tables across receptor setups
+- combined across-replica summary tables across receptor setups
 - documentation describing the overall MM/GBSA post-processing workflow
 
 ## Notes
 
-- Not all file types are present for every system.
+- Not all file types are present for every receptor setup.
 - Some analyses, such as per-residue decomposition, are included only when that calculation was performed.
 - File naming may vary slightly across systems depending on replica-specific naming conventions.
 - Although some output filenames contain `MMPBSA`, files containing the `EGB` term correspond to MM/GBSA results.
 - System-specific summary tables are stored in each system’s `results/summary/` directory, whereas combined cross-system summary tables are stored in `05_MMGBSA_Calculation_and_Summary/`.
+- MM/GBSA values are provided as protocol-dependent endpoint-energy descriptors and should not be interpreted as absolute binding affinities or evidence of ligand potency.
