@@ -1,6 +1,8 @@
 # MD Extension
 
-This directory contains replica-specific shell scripts and execution log files used to extend the production MD runs for the `04_AlphaFold_CAF` system from 20 ns to 60 ns before downstream analysis.
+This directory contains replica-specific shell scripts and execution log files used to extend the production MD runs for the 04_AlphaFold_CAF system from 20 ns to 60 ns before downstream analysis.
+
+The folder label `04_AlphaFold_CAF` corresponds to the **custom AlphaFold-derived KDM5C receptor setup** used in the manuscript. This receptor setup is referred to as **CAF**.
 
 ## Directory contents
 
@@ -29,3 +31,4 @@ These files document the checkpoint-based continuation workflow used to extend t
 - The shell scripts preserve the exact command-line workflow used for each replica.
 - The log files provide execution records for the extended MD runs.
 - Part numbers in the log filenames reflect the original continuation history and may differ among replicas.
+- In the manuscript, this system is described as the **CAF** receptor setup.
