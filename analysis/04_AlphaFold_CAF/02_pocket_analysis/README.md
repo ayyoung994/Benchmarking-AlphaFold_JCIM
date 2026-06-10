@@ -1,10 +1,12 @@
 # Pocket Analysis
 
-This directory contains the pocket-focused analysis workflow for the `04_AlphaFold_CAF` system in the KDM5C benchmarking study.
+This directory contains the pocket-focused analysis workflow for the `04_AlphaFold_CAF` system in the KDM5C receptor-setup sensitivity study.
+
+The folder label `04_AlphaFold_CAF` corresponds to the **custom AlphaFold-derived KDM5C receptor setup** used in the manuscript. This receptor setup is referred to as **CAF**.
 
 ## Purpose
 
-This folder stores analyses used to evaluate the structural behavior and local properties of the binding pocket during the MD trajectory.
+This folder stores analyses used to evaluate local binding-pocket behavior during the MD trajectory. These analyses were used to support comparison of pocket-level stability metrics across receptor setups.
 
 ## Contents
 
@@ -24,8 +26,10 @@ These analyses may include:
 
 ## Notes
 
-- This directory contains only the pocket-focused analyses for `04_AlphaFold_CAF`.
+- This directory contains only the pocket-focused analyses for `04_AlphaFold_CAF` system.
 - Replica-level source outputs and processed summary tables are organized in `processed_outputs/`.
 - Files in `processed_outputs/` were used for downstream summary generation, cross-system comparison, and plotting.
+- SASA-related outputs are provided for structural-context comparison and should be interpreted cautiously because solvent exposure depends on the selected atom group and calculation context.
+- In the manuscript, this system is described as the **CAF** receptor setup.
 - Other analysis categories are organized separately.
 
