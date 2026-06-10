@@ -7,6 +7,7 @@ This directory contains the post-simulation analysis workflows for the `04_Alpha
 The `04_AlphaFold_CAF` system represents the custom AlphaFold-derived KDM5C receptor model used for molecular dynamics simulation and subsequent trajectory analysis. In the manuscript, this receptor setup is referred to as **CAF**.
 
 This analysis module is organized into multiple subdirectories corresponding to major post-MD evaluation categories, including global structural stability, pocket behavior, and ligand behavior analysis.
+
 ---
 
 ## System Description
