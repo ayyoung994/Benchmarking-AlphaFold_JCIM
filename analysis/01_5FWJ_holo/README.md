@@ -2,17 +2,17 @@
 
 ## Overview
 
-This directory contains the post-simulation analysis workflows for the 01_5FWJ_holo system in the KDM5C receptor-setup comparison study.
+This directory contains the post-simulation analysis workflows for the `01_5FWJ_holo system` in the KDM5C receptor-setup sensitivity study.
 
-The folder name `01_5FWJ_holo` is retained as an internal workflow label. In the manuscript, this system is referred to as **5FWJ metal-retained**. This system represents the experimental crystal-structure-based receptor setup in which crystallographic metal ions were retained during protein preparation for molecular dynamics simulation and subsequent trajectory analysis.
+The folder name `01_5FWJ_holo is retained` as an internal workflow label. In the manuscript, this system is referred to as **5FWJ metal-retained**. This system represents the experimental crystal-structure-based receptor setup in which crystallographic metal ions were retained during protein preparation for molecular dynamics simulation and subsequent trajectory analysis.
 
-This analysis module is organized into multiple subdirectories corresponding to major post-MD evaluation categories, including global structural stability, pocket behavior, ligand behavior, and metal-coordination analysis.
+This analysis module is organized into multiple subdirectories corresponding to major post-MD evaluation categories, including global structural stability, pocket behavior, ligand behavior, and metal-associated distance analysis.
 
 ## System Description
 
-`01_5FWJ_holo` corresponds to the 5FWJ metal-retained experimental receptor setup. It was used as one of the MD receptor setups in the comparative workflow and analyzed across independent MD replicas to assess structural stability, ligand retention, binding-site behavior, and metal-associated distance changes relevant to receptor-setup sensitivity analysis.
+`01_5FWJ_holo` corresponds to the **5FWJ metal-retained** experimental receptor setup.It was used as one of the MD receptor setups in the comparative workflow and analyzed across independent MD replicas to assess structural stability, ligand retention, binding-site behavior, and metal-associated distance changes relevant to receptor-setup sensitivity analysis.
 
-In the manuscript, this system should be described as 5FWJ metal-retained, not as a biochemical holo enzyme state. The term holo is used only as an internal folder and file-naming label for workflow continuity.
+In the manuscript, this system should be described as **5FWJ metal-retained**, not as a biochemical holo enzyme state. The term `holo` is used only as an internal folder and file-naming label for workflow continuity.
 
 ---
 
@@ -29,7 +29,7 @@ In the manuscript, this system should be described as 5FWJ metal-retained, not a
 
 ## Scope of Analysis
 
-This directory contains the organized post-MD analysis workflows for the **5FWJ holo** system. Depending on the specific submodule, analyses may include:
+This directory contains the organized post-MD analysis workflows for the **5FWJ metal-retained** receptor setup. Depending on the specific submodule, analyses may include:
 
 - global structural stability assessment,
 - local binding-pocket behavior,
@@ -43,7 +43,7 @@ Because different analysis categories require different preprocessing steps, ato
 
 ## Organization and Reproducibility
 
-This system was organized as a standalone analysis module so that all post-simulation workflows for the **01_5FWJ_holo** condition could be tracked, documented, and reproduced independently from the other receptor models.
+This system was organized as a standalone analysis module so that all post-simulation workflows for the `01_5FWJ_holo` condition could be tracked, documented, and reproduced independently from the other receptor setups.
 
 The analysis structure is divided by workflow type rather than by file format alone. Each subdirectory contains its own scripts, outputs, and README documentation as needed for reproducibility and downstream interpretation.
 
@@ -56,3 +56,9 @@ The corresponding simulation setup, preparation files, and MD input materials fo
 `inputs/01_5FWJ_holo/`
 
 These input files are linked conceptually to the present analysis directory but are maintained outside this module to keep simulation setup and post-MD analysis workflows clearly separated.
+
+## Notes
+
+- The internal label `holo` is retained for workflow continuity.
+- In the manuscript, this system corresponds to **5FWJ metal-retained**.
+- The metal-associated distance analysis should be interpreted as part of the receptor-setup sensitivity workflow, not as definitive validation of native catalytic metal coordination.
