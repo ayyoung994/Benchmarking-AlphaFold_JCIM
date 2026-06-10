@@ -2,6 +2,8 @@
 
 This directory contains the global stability analysis workflow for the `02_5FWJ_apo` system.
 
+The folder label `02_5FWJ_apo` is retained for workflow continuity. In the manuscript, this system corresponds to the **5FWJ metal-depleted** receptor setup.
+
 ## Included analyses
 
 - Cα RMSD
@@ -32,6 +34,7 @@ The global stability analysis workflow includes:
 
 - The `02_5FWJ_apo` system was analyzed directly from the available 60 ns production trajectory files.
 - The preprocessing templates in `scripts/` use `repX` as a placeholder and should be edited to match replica-specific filenames before use.
-- For the crystal-structure-based apo system, JmjC index groups were defined using chain-specific subdivision and the corresponding JmjC residue range.
+- For the **5FWJ metal-depleted** receptor setup, JmjC index groups were defined using chain-specific subdivision and the corresponding JmjC residue range.
 - Interactive GROMACS selections are recorded as comments inside the relevant scripts.
 - Files in `processed_outputs/` were used for downstream summary generation, cross-system comparison, and plotting.
+- The internal label `apo` is retained in file and folder names for workflow continuity. In the manuscript, this system is described as **5FWJ metal-depleted**, not as a fully characterized biochemical apo enzyme state.
