@@ -1,6 +1,8 @@
 # MM/GBSA Input Files
 
-This directory contains the input files used for MM/GBSA calculations for the `04_AlphaFold_CAF` system.
+This directory contains the input files used for MM/GBSA endpoint-energy calculations for the `04_AlphaFold_CAF` system.
+
+The folder label `04_AlphaFold_CAF` corresponds to the **custom AlphaFold-derived KDM5C receptor model** used in the manuscript. This receptor setup is referred to as **CAF**.
 
 ## Contents
 
@@ -10,7 +12,9 @@ This directory contains the input files used for MM/GBSA calculations for the `0
 
 ## Receptor and ligand definition
 
-For the `04_AlphaFold_CAF` system, the MM/GBSA receptor group was defined from the JmjC region only, without including associated metal or cofactor groups.
+For the `04_AlphaFold_CAF system`, the MM/GBSA receptor group was defined from the extracted JmjC region of the CAF receptor setup.
+
+No crystallographic metal-ion groups were included in the MM/GBSA receptor definition for this AlphaFold-derived system.
 
 The ligand group was:
 - `DOL`
@@ -21,3 +25,4 @@ The ligand group was:
 - A separate MM/GBSA-specific index file was not generated for this system.
 - The same MM/GBSA input settings were applied consistently across replicas for this system unless otherwise noted.
 - Replica-specific trajectory and topology files are referenced during execution in the corresponding `scripts/` and `results/` directories.
+- MM/GBSA values are provided as protocol-dependent endpoint-energy descriptors and should not be interpreted as absolute binding affinities or evidence of ligand potency.
