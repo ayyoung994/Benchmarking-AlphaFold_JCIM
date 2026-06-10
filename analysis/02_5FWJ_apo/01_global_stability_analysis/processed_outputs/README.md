@@ -1,6 +1,8 @@
 # Processed Outputs
 
-This directory contains processed output files for the `02_5FWJ_apo` global stability analysis workflow. 
+This directory contains processed output files for the `02_5FWJ_apo` global stability analysis workflow.
+
+The folder label `02_5FWJ_apo` is retained for workflow continuity. In the manuscript, this system corresponds to the **5FWJ metal-depleted** receptor setup.
 
 ## Current contents
 
@@ -8,7 +10,7 @@ This directory contains processed output files for the `02_5FWJ_apo` global stab
   Debug table containing processed values extracted from replica-level `.xvg` analysis outputs for inspection and quality control.
 
 - `global_summary_5FWJ_apo.csv`  
-  Summary table containing the final global stability statistics for the 5FWJ_apo system.
+  Summary table containing the final global stability statistics for the **5FWJ metal-depleted** receptor setup.
 
 ## Source data
 
@@ -24,5 +26,6 @@ Replica-specific source files are identified using `rep1`, `rep2`, and `rep3` in
 
 ## Notes
 
-- `.xvg` files represent raw or intermediate analysis outputs.
+- `.xvg` files represent raw or intermediate GROMACS analysis outputs.
 - `.csv` files represent processed per-system outputs used for downstream comparison, summary generation, and plotting.
+- The internal label `apo` is retained in some source filenames for workflow continuity. In the manuscript, this system is described as **5FWJ metal-depleted**, not as a fully characterized biochemical apo enzyme state.
