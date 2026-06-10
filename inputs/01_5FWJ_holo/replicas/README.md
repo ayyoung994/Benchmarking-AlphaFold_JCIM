@@ -2,9 +2,11 @@
 
 ## Overview
 
-This directory contains the replica-level organization for the **01_5FWJ_holo** molecular dynamics workflow.
+This directory contains the replica-level organization for the `01_5FWJ_holo` molecular dynamics workflow.
 
-Each subdirectory corresponds to one independent replica generated from the same prepared system and shared MD protocol, with replica-specific initialization introduced during the **NVT stage** through different `gen_seed` values.
+The folder label `01_5FWJ_holo` is retained for workflow continuity. In the manuscript, this system corresponds to the **5FWJ metal-retained** receptor setup.
+
+Each subdirectory corresponds to one independent replica generated from the same prepared system and shared MD protocol, with replica-specific initialization introduced during the NVT stage through different `gen_seed` values.
 
 ---
 
@@ -18,7 +20,7 @@ Each subdirectory corresponds to one independent replica generated from the same
 
 ## Purpose
 
-This folder was created to keep the independent replicas organized separately while preserving a consistent structure for reproducibility and downstream analysis.
+This folder was created to keep independent replicas organized separately while preserving a consistent structure for reproducibility and downstream analysis.
 
 All replicas use the same system setup, topology, and simulation protocol, while differing in replica-specific velocity generation during the NVT stage.
 
@@ -26,7 +28,9 @@ All replicas use the same system setup, topology, and simulation protocol, while
 
 ## Notes
 
-- Replica directories correspond to independent simulation branches of the same **01_5FWJ_holo** system.
+- Replica directories correspond to independent simulation branches of the same `01_5FWJ_holo` system.
+- In the manuscript, this system is described as **5FWJ metal-retained**, not as a fully characterized biochemical holo enzyme state.
 - The primary difference between replicas is the `gen_seed` used for velocity generation during the NVT stage.
 - Shared setup files, including topology, coordinates, and common MD parameter files, are stored in the parent directories.
 - The corresponding analysis outputs for each replica are stored separately under the `analysis/` directory.
+- The internal label `holo` is retained in folder and file names for workflow continuity.
