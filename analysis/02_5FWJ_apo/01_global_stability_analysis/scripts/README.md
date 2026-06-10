@@ -1,6 +1,8 @@
 # Global Stability Analysis Scripts
 
-This directory contains shell scripts used for preprocessing and global stability analysis of the `02_5FWJ_apo` system.
+This directory contains shell scripts used for preprocessing and global stability analysis of the `02_5FWJ_apo system`.
+
+The folder label `02_5FWJ_apo` is retained for workflow continuity. In the manuscript, this system corresponds to the **5FWJ metal-depleted** receptor setup.
 
 ## Script organization
 
@@ -11,7 +13,7 @@ These scripts use `repX` as a placeholder and should be edited to match the repl
 
 - `01_make_jmjc_index.sh` — template for generating JmjC- and pocket-related index groups
 - `02_center_trajectory.sh` — template for centering the trajectory and making molecules whole
-- `03_fit_to_core.sh` — template for fitting the trajectory to the JmjC core C-alpha atoms
+- `03_fit_to_core.sh` — template for fitting the trajectory to the JmjC core Cα atoms
 - `04_extract_protein_tpr.sh` — template for generating a protein-only TPR for downstream analyses
 
 ### Analysis scripts
@@ -37,11 +39,12 @@ The scripts follow this general workflow:
 
 ## Replica note
 
-- The template preprocessing scripts in this directory use `repX` as a placeholder. Replace `repX` with the appropriate replica identifier (for example, `rep1`, `rep2`, or `rep3`) before running the commands.
-- Unlike the `01_5FWJ_holo` workflow, the apo system did not require a trajectory-reconstruction step before preprocessing.
-- The apo system was analyzed directly from the available 60 ns production trajectory files.
+- The template preprocessing scripts in this directory use `repX` as a placeholder. Replace `repX` with the appropriate replica identifier, such as `rep1`, `rep2`, or `rep3` before running the commands.
+- Unlike the `01_5FWJ_holo` workflow, the `02_5FWJ_apo` workflow did not require a trajectory-reconstruction step before preprocessing.
+- The **5FWJ metal-depleted** system was analyzed directly from the available 60 ns production trajectory files.
 
 ## Notes
 
 - The template scripts are provided to document the common preprocessing workflow used before global stability analysis.
 - Interactive GROMACS selections are recorded as comments inside each script.
+- The internal label `apo` is retained in script and file names for workflow continuity. In the manuscript, this system is described as **5FWJ metal-depleted**, not as a fully characterized biochemical apo enzyme state.
