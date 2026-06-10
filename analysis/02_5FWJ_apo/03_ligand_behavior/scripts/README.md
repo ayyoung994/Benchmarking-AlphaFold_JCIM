@@ -1,16 +1,19 @@
-# Ligand Behavior Analysis — 02_5FWJ_apo
+# Ligand Behavior Analysis Script — 02_5FWJ_apo
 
 ## Overview
 
-This directory contains the trajectory preprocessing and downstream analyses used for ligand-centered behavior analysis in the **02_5FWJ_apo** system.
+This directory contains trajectory preprocessing scripts and downstream analysis scripts used for ligand-centered behavior analysis in the `02_5FWJ_apo` system.
+
+The folder label `02_5FWJ_apo` is retained for workflow continuity. In the manuscript, this system corresponds to the **5FWJ metal-depleted** receptor setup.
 
 The workflow includes:
+
 1. creation of a ligand heavy-atom index group,
 2. trajectory preprocessing to remove periodic boundary condition (PBC) artifacts,
 3. centering and fitting of the trajectory to a stable protein reference frame, and
 4. downstream ligand-focused analyses, including ligand RMSD, ligand center-of-mass (COM) distance, and ligand–protein hydrogen bond analysis.
 
-Together, these steps were used to evaluate ligand stability, positional retention, and interaction persistence in the **5FWJ apo** system.
+Together, these steps were used to evaluate ligand positional behavior, pocket proximity, and interaction patterns in the **5FWJ metal-depleted** receptor setup.
 
 ---
 
@@ -35,7 +38,7 @@ The trajectory was centered on `Chain_B` and written with whole molecules using 
 
 ### 3. Removal of PBC jumps
 
-Periodic boundary condition (PBC) jumps were removed from the centered full-system trajectory using `gmx trjconv -pbc nojump` to generate a continuous ligand trajectory suitable for downstream analysis.
+Periodic boundary condition jumps were removed from the centered full-system trajectory using `gmx trjconv -pbc nojump` to generate a continuous ligand trajectory suitable for downstream analysis.
 
 - Typical input: `md_center_ligand.xtc`
 - Typical output: `md_nojump_ligand.xtc`
@@ -60,25 +63,25 @@ Together, these preprocessing steps generated a cleaned, centered, and aligned t
 
 ### 5. Ligand RMSD
 
-Ligand heavy-atom RMSD was calculated for `DOL_heavy` using the fitted trajectory (`md_fit_ligand.xtc`). During `gmx rms`, `JmjC_ChainB_CA` was used as the least-squares fit group and `DOL_heavy` was used as the RMSD calculation group.
+Ligand heavy-atom RMSD was calculated for `DOL_heavy` using the fitted trajectory, `md_fit_ligand.xtc`. During `gmx rms`, `JmjC_ChainB_CA` was used as the least-squares fit group and `DOL_heavy` was used as the RMSD calculation group.
 
-This analysis was used to monitor the positional stability of the ligand heavy atoms relative to the JmjC region of chain B over the simulation.
+This analysis was used to monitor ligand heavy-atom positional and conformational changes relative to the JmjC region of chain B over the simulation.
 
 - Script: `05_ligand_rmsd.sh`
 
 ### 6. Ligand center-of-mass distance
 
-The center-of-mass (COM) distance between `DOL_heavy` and `Pocket_JmjCB` was calculated using `gmx distance` on the fitted trajectory (`md_fit_ligand.xtc`).
+The center-of-mass distance between `DOL_heavy` and `Pocket_JmjCB` was calculated using `gmx distance` on the fitted trajectory, `md_fit_ligand.xtc`.
 
-This analysis was used to monitor the relative position of the ligand with respect to the consensus pocket over the simulation.
+This analysis was used to monitor ligand proximity to the predefined pocket region over the simulation.
 
 - Script: `06_ligand_com_distance.sh`
 
 ### 7. Ligand–protein hydrogen bonds
 
-Hydrogen bonds were calculated between `DOL_heavy` and `Pocket_JmjCB` using `gmx hbond` on the fitted trajectory (`md_fit_ligand.xtc`). During the analysis, `DOL_heavy` was used as the reference selection and `Pocket_JmjCB` was used as the target selection.
+Hydrogen bonds were calculated between `DOL_heavy` and `Pocket_JmjCB` using gmx hbond on the fitted trajectory, `md_fit_ligand.xtc`. During the analysis, `DOL_heavy` was used as the reference selection and `Pocket_JmjCB` was used as the target selection.
 
-This analysis was used to monitor hydrogen-bonding interactions between the ligand and the consensus pocket region over the simulation.
+This analysis was used to monitor hydrogen-bonding patterns between the ligand and the predefined pocket region over the simulation.
 
 - Script: `07_ligand_hbond.sh`
 
@@ -98,7 +101,10 @@ This analysis was used to monitor hydrogen-bonding interactions between the liga
 
 ## Notes
 
-- This workflow is specific to the **02_5FWJ_apo** system.
+- This workflow is specific to the `02_5FWJ_apo` system.
+- In the manuscript, this system is described as **5FWJ metal-depleted**, not as a fully characterized biochemical apo enzyme state.
 - Replica-specific filenames should be adjusted within each script before execution.
 - The fitted trajectory generated during preprocessing serves as the main input for downstream ligand behavior analyses.
+- The ligand group analyzed in this workflow was `DOL`.
 - The combined interpretation of ligand RMSD, COM distance, and hydrogen-bond profiles supports assessment of ligand retention, rearrangement, and possible dissociation behavior.
+- The internal label `apo` is retained in script and file names for workflow continuity.
