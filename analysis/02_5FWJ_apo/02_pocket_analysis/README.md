@@ -1,10 +1,12 @@
 # Pocket Analysis
 
-This directory contains the pocket-focused analysis workflow for the `02_5FWJ_apo` system in the KDM5C benchmarking study.
+This directory contains the pocket-focused analysis workflow for the `02_5FWJ_apo` system in the KDM5C receptor-setup sensitivity study.
+
+The folder label `02_5FWJ_apo` is retained for workflow continuity. In the manuscript, this system corresponds to the **5FWJ metal-depleted** receptor setup.
 
 ## Purpose
 
-This folder stores analyses used to evaluate the structural behavior and local properties of the binding pocket during the MD trajectory.
+This folder stores analyses used to evaluate local binding-pocket behavior during the MD trajectory. These analyses were used to support comparison of pocket-level stability metrics across receptor setups.
 
 ## Contents
 
@@ -24,7 +26,9 @@ These analyses may include:
 
 ## Notes
 
-- This directory contains only the pocket-focused analyses for `02_5FWJ_apo`.
+- This directory contains only the pocket-focused analyses for the `02_5FWJ_apo` system.
 - Replica-level source outputs and processed summary tables are organized in `processed_outputs/`.
 - Files in `processed_outputs/` were used for downstream summary generation, cross-system comparison, and plotting.
+- SASA-related outputs are provided for structural-context comparison and should be interpreted cautiously because solvent exposure depends on the selected atom group and calculation context.
+- The internal label `apo` is retained in file and folder names for workflow continuity. In the manuscript, this system is described as **5FWJ metal-depleted**, not as a fully characterized biochemical apo enzyme state.
 - Other analysis categories are organized separately.
