@@ -1,10 +1,12 @@
 # 01_5FWJ_holo MM/GBSA
 
-This directory contains MM/GBSA input files, execution scripts, and result files for the `01_5FWJ_holo` system in the KDM5C benchmarking study.
+This directory contains MM/GBSA endpoint-energy input files, execution scripts, and result files for the `01_5FWJ_holo` system used in the KDM5C receptor-setup sensitivity study.
 
 ## System description
 
-`01_5FWJ_holo` is the crystal-structure-based holo system derived from the experimental 5FWJ model.
+`01_5FWJ_holo` is an internal workflow label corresponding to the **5FWJ metal-retained** receptor setup in the manuscript. This system was derived from the experimental 5FWJ structure, with crystallographic metal ions retained during protein preparation.
+
+The term `holo` is retained in folder and file names for workflow continuity. In the manuscript, this system should be described as **5FWJ metal-retained**, not as a fully characterized biochemical holo enzyme state.
 
 ## Folder organization
 
@@ -27,7 +29,7 @@ The same MM/GBSA input settings and receptor/ligand group definitions were used 
 
 Typical files associated with this system include:
 
-- `mmpbsa.in` — MM/GBSA parameter file
+- `mmpbsa.in` — MM/GBSA endpoint-energy parameter file
 - `jmjc_mmpbsa.ndx` — index file used to define receptor and ligand groups
 - `run_mmgbsa_rep*.sh` — replica-specific execution scripts
 - `gmx_MMGBSA_holo_rep*.log` — execution log for each run
@@ -36,4 +38,7 @@ Typical files associated with this system include:
 
 ## Notes
 
-The receptor group for this holo system was defined from the JmjC Chain B region together with associated metal/cofactor groups. The ligand group was `DOL`.
+- The receptor group for this system was defined from the JmjC chain B region together with retained crystallographic metal ions used in the 5FWJ metal-retained setup.
+- The ligand group was `DOL`.
+- No bonded metal–residue coordination restraints were added during MD production; therefore, MM/GBSA results should be interpreted in the context of the nonbonded metal treatment used in the simulations.
+- MM/GBSA values are provided as protocol-dependent endpoint-energy descriptors and should not be interpreted as absolute binding affinities or evidence of ligand potency.
