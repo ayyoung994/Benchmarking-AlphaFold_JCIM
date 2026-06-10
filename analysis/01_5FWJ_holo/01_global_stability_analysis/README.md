@@ -2,6 +2,8 @@
 
 This directory contains the global stability analysis workflow for the `01_5FWJ_holo` system.
 
+The folder label `01_5FWJ_holo` is retained for workflow continuity. In the manuscript, this system corresponds to the **5FWJ metal-retained** receptor setup.
+
 ## Included analyses
 
 - Cα RMSD
@@ -34,6 +36,7 @@ The global stability analysis workflow includes:
 - For the `01_5FWJ_holo` system, Replicas 2 and 3 were extended to 60 ns before downstream analysis.
 - Replica 1 followed a different recovery workflow because the original MD production files were unavailable and the production run was regenerated.
 - The preprocessing templates in `scripts/` use `repX` as a placeholder and should be edited to match replica-specific filenames before use.
-- For the crystal-structure-based holo system, JmjC index groups were defined using chain-specific subdivision and the corresponding JmjC residue range.
+- For the **5FWJ metal-retained** receptor setup, JmjC index groups were defined using chain-specific subdivision and the corresponding JmjC residue range.
 - Interactive GROMACS selections are recorded as comments inside the relevant scripts.
 - Files in `processed_outputs/` were used for downstream summary generation, cross-system comparison, and plotting.
+- The internal label `holo` is retained in file and folder names for workflow continuity. In the manuscript, this system is described as **5FWJ metal-retained**.
