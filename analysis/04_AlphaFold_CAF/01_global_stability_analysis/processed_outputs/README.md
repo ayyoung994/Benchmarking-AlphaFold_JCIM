@@ -1,6 +1,8 @@
 # Processed Outputs
 
-This directory contains processed output files for the `04_AlphaFold_CAF` global stability analysis workflow. 
+This directory contains processed output files for the `04_AlphaFold_CAF` global stability analysis workflow.
+
+The folder label `04_AlphaFold_CAF` corresponds to the **custom AlphaFold-derived KDM5C receptor setup** used in the manuscript. This receptor setup is referred to as **CAF**.
 
 ## Current contents
 
@@ -8,7 +10,7 @@ This directory contains processed output files for the `04_AlphaFold_CAF` global
   Debug table containing processed values extracted from replica-level `.xvg` analysis outputs for inspection and quality control.
 
 - `global_summary_CAF.csv`  
-  Summary table containing the final global stability statistics for the AlphaFold_CAF system.
+  Summary table containing the final global stability statistics for the **CAF** receptor setup.
 
 ## Source data
 
@@ -24,5 +26,6 @@ Replica-specific source files are identified using `rep1`, `rep2`, and `rep3` in
 
 ## Notes
 
-- `.xvg` files represent raw or intermediate analysis outputs.
+- `.xvg` files represent raw or intermediate GROMACS analysis outputs.
 - `.csv` files represent processed per-system outputs used for downstream comparison, summary generation, and plotting.
+- In the manuscript, this system is described as the **CAF** receptor setup.
