@@ -2,6 +2,8 @@
 
 This directory contains shell scripts used for preprocessing and pocket-focused analysis of the `01_5FWJ_holo` system.
 
+The folder label `01_5FWJ_holo` is retained for workflow continuity. In the manuscript, this system corresponds to the **5FWJ metal-retained** receptor setup.
+
 ## Script organization
 
 The scripts are arranged in workflow order.
@@ -30,19 +32,21 @@ The scripts follow this general workflow:
 1. create pocket-related index groups
 2. center and compact the trajectory
 3. fit the trajectory to the JmjC core
-4. calculate pocket RMSD
+4. calculate pocket Cα RMSD
 5. calculate pocket radius of gyration
-6. calculate pocket SASA
-7. calculate pocket-only SASA
+6. calculate SASA in the JmjC-domain context
+7. calculate SASA for the isolated pocket-residue subset
 
 ## Replica note
 
-- The template preprocessing scripts in this directory use `repX` as a placeholder. Replace `repX` with the appropriate replica identifier (for example, `rep1`, `rep2`, or `rep3`) before running the commands.
+- The template preprocessing scripts in this directory use `repX` as a placeholder. Replace `repX` with the appropriate replica identifier, such as `rep1`, `rep2`, or `rep3`, before running the commands.
 - Replicas 2 and 3 followed the standard extended-trajectory workflow, whereas Replica 1 required a different recovery workflow because the original production files were unavailable.
-- Pocket-related analyses for this system used chain-specific JmjC and pocket index groups derived from the crystal-structure-based holo model.
+- Pocket-related analyses for this system used chain-specific JmjC and pocket index groups derived from the **5FWJ metal-retained** receptor setup.
 
 ## Notes
 
 - The template scripts are provided to document the common preprocessing workflow used before pocket-focused analysis.
 - Interactive GROMACS selections are recorded as comments inside the relevant scripts.
 - Pocket-related index groups were generated from the prepared `jmjc.ndx` workflow for this system.
+- SASA-related outputs should be interpreted cautiously because solvent exposure depends on the selected atom group and calculation context.
+- The internal label `holo` is retained in script and file names for workflow continuity. In the manuscript, this system is described as **5FWJ metal-retained**.
