@@ -2,9 +2,11 @@
 
 ## Overview
 
-This directory contains the ligand behavior analysis workflow for the **01_5FWJ_holo** molecular dynamics simulation set.
+This directory contains the ligand behavior analysis workflow for the `01_5FWJ_holo` molecular dynamics simulation set.
 
-The analyses were performed to evaluate ligand stability, positional retention, and interaction persistence within the binding pocket across **three independent MD replicas**. Together, these metrics provide a focused assessment of whether the ligand remains stably associated with the binding region, undergoes pose rearrangement, or shows signs of partial or complete dissociation.
+The folder label `01_5FWJ_holo` is retained for workflow continuity. In the manuscript, this system corresponds to the **5FWJ metal-retained** receptor setup.
+
+The analyses were performed to evaluate ligand positional behavior, pocket proximity, and interaction patterns across three independent MD replicas. Together, these metrics provide a focused assessment of whether the ligand remains close to the predefined pocket region, undergoes local pose rearrangement, or shows larger displacement during the simulation.
 
 ---
 
@@ -29,18 +31,19 @@ This metric is useful for evaluating:
 
 ### 2. Ligand–Pocket Center-of-Mass Distance
 
-The center-of-mass (COM) distance between the ligand and the selected binding-pocket reference group was calculated to assess positional retention of the ligand within the pocket environment.
+The center-of-mass (COM) distance between the ligand and the selected binding-pocket reference group was calculated to assess ligand proximity to the pocket environment.
 
 This metric helps identify:
-- stable residence within the binding site,
-- gradual displacement,
-- or larger-scale movement away from the pocket.
+- maintained proximity to the binding-site region
+- gradual displacement from the predefined pocket
+- larger-scale movement away from the pocket region
 
 ### 3. Ligand–Protein Hydrogen Bonds
 
 Hydrogen bond analysis was performed to quantify polar interactions formed between the ligand and the protein during the trajectory.
 
 This metric provides information on:
+
 - persistence of ligand–protein polar contacts,
 - changes in interaction patterns across replicas,
 - and the degree of interaction support for the bound state.
@@ -49,12 +52,12 @@ This metric provides information on:
 
 ## Interpretation
 
-The combined interpretation of ligand RMSD, ligand–pocket COM distance, and ligand–protein hydrogen bond profiles allows discrimination between different ligand behaviors, including:
+Ligand RMSD, ligand–pocket COM distance, and ligand–protein hydrogen-bond profiles were interpreted together to describe ligand behavior across replicas. These combined metrics help distinguish between:
 
-- stable ligand retention within the binding pocket,
-- local pose rearrangement while remaining pocket-associated,
-- weakening of ligand–protein interactions,
-- and partial or complete ligand dissociation.
+- ligand retention near the binding-pocket region
+- local pose rearrangement while remaining pocket-proximal
+- weakening or loss of persistent ligand–protein interactions
+- larger ligand displacement from the predefined pocket region
 
 Because no single metric is sufficient on its own, these analyses were interpreted together to provide a more reliable description of ligand behavior across the three replicas.
 
@@ -80,15 +83,18 @@ Representative processed outputs include:
 
 The scripts required for trajectory preparation and ligand behavior analysis are provided in the `scripts/` directory.
 
-Processed output files are provided in `processed_outputs/`, including both replica-level analysis outputs and summarized results for the **5FWJ holo** system.
+Processed output files are provided in `processed_outputs/`, including both replica-level analysis outputs and summarized results for the **5FWJ metal-retained** receptor setup.
 
-These materials are intended to support reproducibility, downstream comparison across systems, and generation of final summary figures and tables.
+These materials are intended to support reproducibility, downstream comparison across receptor setups, and generation of final summary figures and tables.
 
 ---
 
 ## Notes
 
 - This module is specific to the **01_5FWJ_holo** system.
+- In the manuscript, this system is described as **5FWJ metal-retained**, not as a biochemical holo enzyme state.
 - All analyses were conducted across **three independent replicas**.
 - File naming conventions use `rep1`, `rep2`, and `rep3` to distinguish replica-specific outputs.
+- The ligand group analyzed in this workflow was `DOL`.
 - The processed summary outputs were used for downstream cross-system comparison of ligand behavior metrics.
+- The internal label `holo` is retained in file and folder names for workflow continuity.
