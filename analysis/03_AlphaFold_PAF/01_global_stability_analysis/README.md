@@ -2,6 +2,8 @@
 
 This directory contains the global stability analysis workflow for the `03_AlphaFold_PAF` system.
 
+The folder label `03_AlphaFold_PAF` corresponds to the **public AlphaFold-derived KDM5C receptor setup** used in the manuscript. This receptor setup is referred to as **PAF**.
+
 ## Included analyses
 
 - Cα RMSD
@@ -33,7 +35,8 @@ The global stability analysis workflow includes:
 
 - The `03_AlphaFold_PAF` system was extended to 60 ns before downstream analysis.
 - The preprocessing templates in `scripts/` use `repX` as a placeholder and should be edited to match replica-specific filenames before use.
-- For the AlphaFold-based system, JmjC index groups were defined directly from the residue range corresponding to the JmjC region, without chain-specific subdivision.
+- For this AlphaFold-based system, JmjC index groups were defined directly from the residue range corresponding to the JmjC region, without chain-specific subdivision.
 - Interactive GROMACS selections are recorded as comments inside the relevant scripts.
 - Files in `processed_outputs/` were used for downstream summary generation, cross-system comparison, and plotting.
+- In the manuscript, this system is described as the **PAF** receptor setup.
 
