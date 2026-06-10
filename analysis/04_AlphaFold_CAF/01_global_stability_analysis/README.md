@@ -2,6 +2,8 @@
 
 This directory contains the global stability analysis workflow for the `04_AlphaFold_CAF` system.
 
+The folder label` 04_AlphaFold_CAF` corresponds to the **custom AlphaFold-derived KDM5C receptor setup** used in the manuscript. This receptor setup is referred to as **CAF**.
+
 ## Included analyses
 
 - Cα RMSD
@@ -33,6 +35,7 @@ The global stability analysis workflow includes:
 
 - The `04_AlphaFold_CAF` system was extended to 60 ns before downstream analysis.
 - The preprocessing templates in `scripts/` use `repX` as a placeholder and should be edited to match replica-specific filenames before use.
-- For the AlphaFold-based system, JmjC index groups were defined directly from the residue range corresponding to the JmjC region, without chain-specific subdivision.
+- For this AlphaFold-derived receptor setup, JmjC index groups were defined directly from the residue range corresponding to the JmjC catalytic interval, without chain-specific subdivision.
 - Interactive GROMACS selections are recorded as comments inside the relevant scripts.
 - Files in `processed_outputs/` were used for downstream summary generation, cross-system comparison, and plotting.
+- In the manuscript, this system is described as the **CAF** receptor setup.
