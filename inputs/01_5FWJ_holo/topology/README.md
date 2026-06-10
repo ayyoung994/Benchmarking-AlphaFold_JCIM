@@ -2,9 +2,11 @@
 
 ## Overview
 
-This directory contains the topology and parameter files required to reproduce the **01_5FWJ_holo** molecular dynamics system.
+This directory contains the topology and parameter files required to reproduce the `01_5FWJ_holo` molecular dynamics system.
 
-It includes the main topology file, ligand parameter files, protein topology includes, position restraint files, and the local CHARMM36 force-field directory used during MD setup and simulation.
+The folder label `01_5FWJ_holo` is retained for workflow continuity. In the manuscript, this system corresponds to the **5FWJ metal-retained** receptor setup.
+
+This directory includes the main topology file, ligand parameter files, protein topology include files, position restraint files, and the local CHARMM36 force-field directory used during MD setup and simulation.
 
 ---
 
@@ -28,7 +30,7 @@ It includes the main topology file, ligand parameter files, protein topology inc
 
 ## Purpose
 
-This directory was created to provide the topology, parameter, and restraint files required to build and simulate the **01_5FWJ_holo** MD system in a reproducible manner.
+This directory was created to provide the topology, parameter, and restraint files required to build and simulate the **5FWJ metal-retained** MD system in a reproducible manner.
 
 ---
 
@@ -36,3 +38,6 @@ This directory was created to provide the topology, parameter, and restraint fil
 
 - The files in this directory are used together with the structure files in `../structures/` and the simulation parameter files in `../mdp/`.
 - Position restraint files are included for system preparation and equilibration stages where applicable.
+- The internal label `holo` is retained in file names for workflow continuity.
+- In the manuscript, this system is described as **5FWJ metal-retained**, not as a fully characterized biochemical holo enzyme state.
+- The retained crystallographic metal ions were included according to the MD setup described in the manuscript
