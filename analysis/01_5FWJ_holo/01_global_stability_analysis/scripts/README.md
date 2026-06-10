@@ -2,12 +2,14 @@
 
 This directory contains shell scripts used for preprocessing and global stability analysis of the `01_5FWJ_holo` system.
 
+The folder label `01_5FWJ_holo` is retained for workflow continuity. In the manuscript, this system corresponds to the **5FWJ metal-retained** receptor setup.
+
 ## Script organization
 
 The scripts are arranged in workflow order.
 
 ### Template preprocessing scripts
-These scripts use `repX` as a placeholder and should be edited to match the replica-specific filenames before use.
+These scripts use `repX` as a placeholder and should be edited to match replica-specific filenames before use.
 
 - `01_prepare_0_60ns_trajectory.sh` — template for preparing a continuous 0–60 ns trajectory when reconstruction from split trajectory parts is required
 - `02_make_jmjc_index.sh` — template for generating JmjC- and pocket-related index groups
@@ -39,12 +41,13 @@ The scripts follow this general workflow:
 
 ## Replica note
 
-- The template preprocessing scripts in this directory use `repX` as a placeholder. Replace `repX` with the appropriate replica identifier (for example, `rep1`, `rep2`, or `rep3`) and adjust trajectory part filenames as needed before running the commands.
+- The template preprocessing scripts in this directory use `repX` as a placeholder. Replace `repX` with the appropriate replica identifier, such as `rep1`, `rep2`, or `rep3`, and adjust trajectory-part filenames as needed before running the commands.
 - `01_prepare_0_60ns_trajectory_template.sh` was only required for Replicas 2 and 3.
-- Replica 1 is not represented by this trajectory-reconstruction step because the original MD production files were lost and the production run was regenerated through a different workflow.
+- Replica 1 is not represented by this trajectory-reconstruction step because the original MD production files were unavailable and the production run was regenerated through a separate recovery workflow.
 
 ## Notes
 
 - Not all replicas required trajectory reconstruction from split files.
 - The template scripts are provided to document the common preprocessing workflow used before global stability analysis.
 - Interactive GROMACS selections are recorded as comments inside each script.
+- The internal label `holo` is retained in script and file names for workflow continuity. In the manuscript, this system is described as **5FWJ metal-retained**.
