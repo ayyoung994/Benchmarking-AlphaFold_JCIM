@@ -15,7 +15,7 @@ This directory contains MM/GBSA endpoint-energy input files, execution scripts, 
 
 ## Replica organization
 
-MM/GBSA calculations were performed for three independent replicas of the `03_AlphaFold_PAF` system:
+MM/GBSA calculations were performed for three independent replicas of the `03_AlphaFold_PAF system`:
 
 - `rep1`
 - `rep2`
