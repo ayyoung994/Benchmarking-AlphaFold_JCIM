@@ -1,16 +1,19 @@
-# Ligand Binding Analysis — 5FWJ Holo
+# Ligand Behavior Scripts — 5FWJ Holo
 
 ## Overview
 
-This directory contains the shell scripts used for ligand-centered molecular dynamics (MD) trajectory preparation and downstream ligand-behavior analysis for the **5FWJ holo** system.
+This directory contains shell scripts used for ligand-centered molecular dynamics (MD) trajectory preparation and downstream ligand-behavior analysis for the `01_5FWJ_holo` system.
+
+The folder label `01_5FWJ_holo` is retained for workflow continuity. In the manuscript, this system corresponds to the **5FWJ metal-retained** receptor setup.
 
 The workflow includes:
+
 1. creation of a ligand heavy-atom index group,
 2. removal of periodic boundary condition (PBC) artifacts,
 3. trajectory centering and structural fitting, and
-4. downstream analyses of ligand stability and interaction behavior.
+4. downstream analyses of ligand positional behavior and interaction patterns.
 
-These scripts were prepared for the **5FWJ holo** system and can be adapted for individual replicas by modifying the relevant input and output filenames as needed.
+These scripts were prepared for the `01_5FWJ_holo system` and can be adapted for individual replicas by modifying the relevant input and output filenames as needed.
 
 ---
 
@@ -18,7 +21,7 @@ These scripts were prepared for the **5FWJ holo** system and can be adapted for 
 
 ### 1. Creation of ligand heavy-atom index
 
-A heavy-atom index group was generated for the ligand (`DOL`) to support heavy-atom-based ligand RMSD analysis.
+A heavy-atom index group was generated for the ligand `DOL` to support heavy-atom-based ligand RMSD analysis.
 
 - Script: `01_make_DOL_heavy_index.sh`
 - Purpose: creates the ligand heavy-atom index group for downstream analysis
@@ -60,14 +63,14 @@ Together, these preprocessing steps generate a cleaned, centered, and structural
 
 ### 5. Ligand RMSD
 
-Ligand heavy-atom RMSD was calculated to evaluate ligand positional stability during the simulation.
+Ligand heavy-atom RMSD was calculated to evaluate ligand positional and conformational changes during the simulation.
 
 - Script: `05_ligand_rmsd.sh`
 - Purpose: calculates ligand heavy-atom RMSD from the fitted trajectory
 
 ### 6. Ligand center-of-mass distance
 
-The distance between the ligand center of mass and the selected protein reference region was calculated to monitor ligand positional behavior within the binding site environment.
+The distance between the ligand center of mass and the selected pocket reference group was calculated to monitor ligand proximity to the predefined binding-pocket region.
 
 - Script: `06_ligand_com_distance.sh`
 - Purpose: calculates ligand center-of-mass (COM) distance
@@ -83,19 +86,22 @@ Hydrogen bonds formed between the ligand and the protein were quantified across 
 
 ## Scripts Included
 
-- `01_make_DOL_heavy_index.sh` — creates the DOL heavy-atom index group
+- `01_make_DOL_heavy_index.sh` — creates the `DOL` heavy-atom index group
 - `02_ligand_nojump.sh` — removes PBC jumps from the trajectory
 - `03_ligand_center.sh` — centers the trajectory on `Chain_B` and reconstructs whole molecules
 - `04_ligand_fit.sh` — aligns the trajectory to `JmjC_ChainB_CA`
 - `05_ligand_rmsd.sh` — calculates ligand heavy-atom RMSD
 - `06_ligand_com_distance.sh` — calculates ligand center-of-mass distance
-- `07_ligand_hbond.sh` — calculates ligand–protein hydrogen bonds
+- `07_ligand_hbond.sh` — calculates ligand–protein hydrogen-bond counts
 
 ---
 
 ## Notes
 
-- This workflow is intended for the **5FWJ holo** system.
+- This workflow is specific to the `01_5FWJ_holo` system.
+- In the manuscript, this system is described as **5FWJ metal-retained**, not as a biochemical holo enzyme state.
 - Replica-specific filenames may differ and should be adjusted within each script before execution.
 - The fitted trajectory generated during preprocessing is used as the main input for downstream ligand-behavior analyses.
-- A replicate-specific version of this workflow may also be stored in subdirectories such as `rep1/`.
+- A replica-specific version of this workflow may also be stored in subdirectories such as `rep1/`.
+- The ligand group analyzed in this workflow was `DOL`.
+- The internal label holo is retained in script and file names for workflow continuity.
