@@ -1,10 +1,12 @@
-# Receptor-Setup Sensitivity in KDM5C
+# Receptor-Preparation Effects in KDM5C Catalytic-Site Modeling
 
 ## Overview
 
-This repository contains input files, molecular dynamics workflows, MM/GBSA-related files, and post-simulation analysis outputs used in the KDM5C receptor-setup sensitivity study.
+This repository contains input files, molecular dynamics workflows, MM/GBSA-related files, and post-simulation analysis outputs used in a comparative receptor-preparation study of KDM5C catalytic-site modeling.
 
-The project examines how experimental and AlphaFold-derived KDM5C receptor setups influence catalytic-pocket definition, docking interpretation, and trajectory-based ligand-pose behavior using GROMACS-based molecular dynamics simulations and downstream comparative analyses.
+The project examines how experimental 5FWJ-derived and AlphaFold-derived KDM5C receptor setups influence catalytic-pocket definition, docking interpretation, and trajectory-based ligand-pose behavior using GROMACS-based molecular dynamics simulations and downstream comparative analyses.
+
+The analyses are intended to support receptor-preparation comparison and reproducibility. They are not intended to validate ligand potency, KDM5C inhibitory activity, or therapeutic relevance.
 
 
 ## Repository Structure
