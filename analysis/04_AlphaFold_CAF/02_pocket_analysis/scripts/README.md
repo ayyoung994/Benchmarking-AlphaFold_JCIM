@@ -21,8 +21,6 @@ These scripts were used for the final pocket-focused calculations.
 
 - `04_pocket_rmsd.sh` — pocket Cα RMSD calculation
 - `05_pocket_rg.sh` — pocket radius of gyration calculation
-- `06_pocket_sasa.sh` — SASA calculation in the JmjC-domain context
-- `07_pocket_sasa_only.sh` — SASA calculation for the isolated pocket-residue subset
 
 ## Workflow order
 
@@ -33,8 +31,7 @@ The scripts follow this general workflow:
 3. fit the trajectory to the JmjC core
 4. calculate pocket Cα RMSD
 5. calculate pocket radius of gyration
-6. calculate SASA in the JmjC-domain context
-7. calculate SASA for the isolated pocket-residue subset
+
 
 ## Replica note
 
@@ -47,5 +44,4 @@ The scripts follow this general workflow:
 - The template scripts are provided to document the common preprocessing workflow used before pocket-focused analysis.
 - Interactive GROMACS selections are recorded as comments inside the relevant scripts.
 - Pocket-related index groups were generated from the prepared `jmjc.ndx` workflow for this system.
-- SASA-related outputs should be interpreted cautiously because solvent exposure depends on the selected atom group and calculation context.
 - In the manuscript, this system is described as the **CAF** receptor setup.
