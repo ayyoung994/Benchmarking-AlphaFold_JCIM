@@ -41,5 +41,4 @@ These outputs are intended to support:
 - This folder contains only the integrated cross-system outputs for pocket analysis.
 - Per-system and per-replica intermediate files are stored in the corresponding system-specific analysis directories.
 - The summary table and figure in this directory are intended for downstream comparison and final reporting.
-- SASA-related outputs are provided for structural-context comparison and should be interpreted cautiously because solvent exposure depends on the selected atom group and calculation context.
 - Pocket-focused metrics should be interpreted together with global stability and ligand-behavior analyses.
