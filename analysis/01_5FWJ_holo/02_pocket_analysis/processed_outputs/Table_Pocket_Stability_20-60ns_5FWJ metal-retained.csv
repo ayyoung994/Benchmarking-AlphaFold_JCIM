@@ -1,4 +1,3 @@
 System,Metric,Rep 1 (20–60 ns mean),Rep 2 (20–60 ns mean),Rep 3 (20–60 ns mean),Replica-avg (mean ± SD)
 5FWJ metal-retained,Pocket RMSD (nm),0.144726713075,0.081245346,0.07868927980000001,0.102 ± 0.037
 5FWJ metal-retained,Pocket Rg (nm),0.9768392199450137,0.9500532236940765,0.940275752311922,0.956 ± 0.019
-5FWJ metal-retained,Pocket SASA (nm^2),98.72520519870032,96.93023444138966,95.51003624093977,97.055 ± 1.611
