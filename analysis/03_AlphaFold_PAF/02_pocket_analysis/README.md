@@ -20,8 +20,6 @@ These analyses may include:
 
 - pocket Cα RMSD
 - pocket radius of gyration
-- SASA calculated for the isolated pocket-residue subset
-- SASA calculated in the JmjC-domain context
 - other pocket-centered metrics relevant to local structural stability
 
 ## Notes
@@ -29,7 +27,6 @@ These analyses may include:
 - This directory contains only the pocket-focused analyses for `03_AlphaFold_PAF` system.
 - Replica-level source outputs and processed summary tables are organized in `processed_outputs/`.
 - Files in `processed_outputs/` were used for downstream summary generation, cross-system comparison, and plotting.
-- SASA-related outputs are provided for structural-context comparison and should be interpreted cautiously because solvent exposure depends on the selected atom group and calculation context.
 - In the manuscript, this system is described as the **PAF** receptor setup.
 - Other analysis categories are organized separately.
 
