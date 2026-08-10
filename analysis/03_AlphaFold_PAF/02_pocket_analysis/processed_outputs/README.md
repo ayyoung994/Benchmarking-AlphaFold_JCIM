@@ -16,8 +16,7 @@ The current `.xvg` files include the following metrics:
 
 - pocket Cα RMSD
 - pocket radius of gyration
-- SASA calculated for the isolated pocket-residue subset
-- SASA calculated in the JmjC-domain context
+
 
 Replica-specific source files are identified using `rep1`, `rep2`, and `rep3` in the filenames.
 
@@ -30,6 +29,5 @@ Replica-specific source files are identified using `rep1`, `rep2`, and `rep3` in
 
 - `.xvg` files represent raw or intermediate analysis outputs generated directly from the analysis workflow.
 - `.csv` files represent processed per-system summary outputs used for downstream comparison, summary generation, and plotting.
-- SASA-related outputs are provided for structural-context comparison and should be interpreted cautiously because solvent exposure depends on the selected atom group and calculation context.
 - These processed outputs were used for cross-system pocket stability comparison in the final summary directory.
 - In the manuscript, this system is described as the **PAF** receptor setup.
