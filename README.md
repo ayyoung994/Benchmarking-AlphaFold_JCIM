@@ -1,12 +1,14 @@
-# Receptor-Preparation Effects in KDM5C Catalytic-Site Modeling
+# KDM5C Catalytic-Site Simulations Across Distinct Receptor Setups
 
 ## Overview
 
-This repository contains input files, molecular dynamics workflows, MM/GBSA-related files, and post-simulation analysis outputs used in a comparative receptor-preparation study of KDM5C catalytic-site modeling.
+This repository contains input files, molecular dynamics workflows, MM/GBSA-related files, and post-simulation analysis outputs used in a comparative receptor-setup study of KDM5C catalytic-site modeling.
 
-The project examines how experimental 5FWJ-derived and AlphaFold-derived KDM5C receptor setups influence catalytic-pocket definition, docking interpretation, and trajectory-based ligand-pose behavior using GROMACS-based molecular dynamics simulations and downstream comparative analyses.
+The project compares an experimental 5FWJ-derived receptor with public and custom AlphaFold-derived KDM5C receptor representations. Pocket mapping and exploratory molecular docking were performed for the 5FWJ metal-depleted, PAF, and CAF receptor conditions. Replicate molecular dynamics simulations were subsequently performed for four receptor conditions: 5FWJ metal-retained, 5FWJ metal-depleted, PAF, and CAF.
 
-The analyses are intended to support receptor-preparation comparison and reproducibility. They are not intended to validate ligand potency, KDM5C inhibitory activity, or therapeutic relevance.
+The analyses focus on differences in catalytic-pocket definition, receptor-specific docking environments, and trajectory-based ligand-pose behavior across the evaluated receptor conditions. Because receptor coordinates, pocket definitions, docking configurations, and metal treatment were not independently varied, the results are interpreted as differences among complete receptor setups rather than isolated effects of individual preparation variables.
+
+The analyses are intended to support comparative receptor-setup assessment and reproducibility. They are not intended to establish experimental ligand binding, KDM5C inhibitory activity, therapeutic relevance, or superiority of any receptor representation.
 
 
 ## Repository Structure
